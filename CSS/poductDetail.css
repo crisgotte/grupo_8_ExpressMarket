@@ -1,0 +1,33 @@
+.container-fluid{
+    background-color:rgb(84, 139, 84);
+    margin-bottom: 20px;
+} 
+.logo{
+        height: 100px;
+        width: 100px;
+        margin-bottom:10px;
+        margin-top:10px;
+        margin-left: 0px;
+} 
+h1{
+    margin-left: 0px;
+}
+.boton{
+    margin-top: 70px;
+    width: 300px;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+.footer{
+    background-color:rgb(84, 139, 84);
+    margin-top:20px;
+} 
+.img_product{
+    height: 400px;    
+    margin-bottom:10px;
+    margin-top:10px;
+    margin-left: 0px;
+}
+.product{
+    text-align: center;
+}

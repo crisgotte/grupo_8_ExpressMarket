@@ -1,0 +1,70 @@
+.container-fluid{
+    background-color:rgb(84, 139, 84);
+    margin-bottom: 20px;
+} 
+.logo{
+        height: 100px;
+        width: 100px;
+        margin-bottom:10px;
+        margin-top:10px;
+        margin-left: 0px;
+} 
+
+.filas{
+    
+} 
+
+
+ .volver{
+     margin-left: 200px;
+     margin-top: 40px;
+ }
+ .container {
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(204, 204, 204);
+ }  
+ .cuadro{
+    width: 600px;
+    height: 90px;
+    vertical-align: top;
+ } 
+ .text{
+    
+} 
+ .productos{
+     width: 215px;
+     height: 35px;
+     padding-left:10px;
+     margin-top:15px;
+     margin-right:0px;
+ } 
+
+ .boton{
+     margin-top: 70px;
+     width: 300px;
+     margin-right: 200px;
+     margin-left: 200px;
+ } 
+ .footer{
+    background-color:rgb(84, 139, 84);
+    margin-top:20px;
+} 
+.redessociales{
+    width:30px;
+} 
+.tarjetas{
+    width: 300px;
+    display: block;
+    margin-top:20px;
+} 
+
+.logo1{
+    height: 100px;
+        width: 100px;
+        margin-bottom:10px;
+        margin-top:5px;
+        margin-left: 0px;
+        margin-right:30px;
+} 
