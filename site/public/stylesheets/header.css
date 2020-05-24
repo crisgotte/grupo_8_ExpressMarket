@@ -1,0 +1,22 @@
+.container-fluid{
+    background-color:green;
+margin-bottom: 20px;
+} 
+.logo{
+        height: 100px;
+        width: 100px;
+        margin-bottom:10px;
+        margin-top:10px;
+        margin-left: 0px;
+} 
+.form-inline {
+    margin-top: 40px;
+    margin-left: 70px;
+   } 
+   .form-control{
+        padding-right:100px;
+    } 
+ .usuario{
+     margin-left: 200px;
+     margin-top: 40px;
+     }
