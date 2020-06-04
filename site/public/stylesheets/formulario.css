@@ -1,7 +1,7 @@
 .container-fluid{
-    background-color:rgb(84, 139, 84);
-    margin-bottom: 20px;
-} 
+    background-color: #40A72E;
+    margin-top:20px;
+}  
 .logo{
         height: 100px;
         width: 100px;
@@ -48,7 +48,7 @@
      margin-left: 200px;
  } 
  .footer{
-    background-color:rgb(84, 139, 84);
+    background-color: #40A72E;
     margin-top:20px;
 } 
 .redessociales{
