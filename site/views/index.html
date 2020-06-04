@@ -6,156 +6,209 @@
 		<title>Home Express</title>
 		<link rel= "stylesheet" href="css/boostrap.min.css">
 		<script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script>
+		<link href="css/miestilo.css" rel="stylesheet">
+
 	</head>
-	<body>		
-			<!--- cabecera -->
-		<header class="main-header">
-			<div class="container-fluid topbar">
-				<div class= "comtainer">
-					<a href = "/" class="main-header_home-link">
-						<img src="../public/images/Logo.png" alt="logotipo" class="logo">
-			</div>
-			</nav>
-						
-			<div class="navbar1">
-				
-					<a href="">Inicio</a>
-					<a href="">Tiendas y promociones</a>
-					<a href="">Catalogo</a>
-					<a href="">Cobertura</a>
-						<!--<i class="icon-placeholder"> </i></a>--->
-					<a href="">Ayuda y contacto</a>
-				
-			</div>
-				
-			<div class="navbar2">
-					<a href="">Creá tu cuenta</a>
-					<a href="">Ingresá</a>
-					<a href="">Mis compras</a>
-​			 </div>	
-			</nav>
+	<body class= "body">	
+		   <header>
+				<div class="container-fluid">
+					<div  id = "separado" class="row">
+						<div class="col-3">
+							<img src="../public/images/Logo.png"
+								alt="Express Market" class=logo>
+						</div>
+						<div class=col-6>
+							<form class="form-inline">
+								<input class="form-control" type="search" placeholder="más productos" aria-label="Search">
+								<button id= "boton" class="btn btn-outline-success my-2 my-lg-4" type="submit">Buscar</button>
+							</form>
+						</div>
+						<div class="usuario" class=col-3>
+							<button id= "boton" class="btn btn-outline-success my-2 my-lg-4" type="submit">Ingresar</button>
+						</div>
+					</div>
+					<div id= "menu" class="row">
+					   <div class="col-12">
+						<ul class="navbar" >
+							<li><a class= "inicio" href="">Inicio</a></li>
+							<li><a class= "inicio" href="">Tiendas y promociones</a></li>
+							<li><a class= "inicio" href="">Catálogo</a></li>
+							<li><a class= "inicio" href="">Cobertura</a></li>
+							<li><a class= "inicio" href="">Ayuda y contacto</a></li>
+						</ul>   
+						</div>
+					</div>
+				</div>
+			</header>
+			
+			<!------------------------------------cabecera de la pagina
+			 <div class= "container-header">
+				<div class ="row-header">
+					<div id="logo-header"  class="col-2">
+						<img src="imagenes/Logohome.png" alt="logo" class="logo"> </div>
+					
+					<div class=col-6>
+							<form class="form-inline">
+								<input class="form-control" type="search" placeholder="Buscar más productos, marcas y más" aria-label="Search">
+								<button class="btn btn-outline-success my-2 my-lg-4" type="submit">Buscar</button>
+							</form>
+					</div>	
 
-		</header>
+					<div class="usuario" class=col-4>
+						<button class="btn btn-outline-success my-2 my-lg-4" type="submit">Ingresar</button>
+					</div>
+					
+				</div>
+				<div class="row-header01">
+					<div id="navbar" class="col-md-12">
 
-		<!-- banner -->
-		<section class="banner">
-			<img src="../public/images/banner.jpg" alt="banner">
-		</section>
-
-		<!-- productos -->
-		<section class="vip-ofertas">
-			<article class="ofertas-col-md-12">
-				<h2 class="titulo"> Ofertas Destacadas</h2>
-				<div class="container">
-					<div class="columna1kd">
-						<img class="special" src="../public/images/ofertaDeVerdad.jpg"></div>
-
-					<div class="columna2kd">
-						<img class="photo" src="../public/images/cuidadoHogar.jpg" alt="pdto 01"></div>
-
-
-					<img class="photo" src="../public/images/cuidadoPersonal.jpg" alt="pdto 02"></div>
-					<!--- <a href=""> link foto </a>   -->
-				</div>	
-		</section>
-
-		<section class="home-desktop_brands wrapper banners-wrapper food-site">
-
-				<h2 class= "titulo"> Promociones</h2> 
-				<!---- marcas destacadas---->
-					<img class="photo" src="../public/images/mastellone.jpg" alt="pdto 01"></div>
-					<img class="photo" src="../public/images/oralB.jpg" alt="pdto 02"></div>
-					<img class="photo" src="../public/images/quilmes.jpg" alt="pdto 03"></div>
-
-				<div class="col-xs-12 col-sm-12 recomendedVM align-center">
-				<a href= "./supermercado" class="botonVerMas">
-							Ver todos los productos	</a>
-				</div>			
-
-				<div class= "recetas col-md-12">
-					<h2 class= "titulo"> Nuestras Recetas</h2>
-					<div class= "container" >
-						<div class= "row-recetas-container">
-							  
-				<div class="col-xs-12 col-md-4 item-receta" style="">
-    					<div class="row">
-      	<!---- <a href="/recetas/Lasagna-de-Carne" class="col-md-12 descripcion_receta"> --->
-        				<img src="../public/images/lasagna.jpg" alt="Lasagna de Carne" title="Lasagna de Carne - Recetas">     
-     					<h3 class="title_receta col-xs-12 col-md-10 col-md-offset-1"> Lasagna de Carne</h3>
-      					<p class=" description_recipes col-md-10 col-md-offset-1">
-            			Prepara una deliciosa lasagna de carne con los mejores ingredientes.</p>
-
-      		    </div>
-	
-				<div class="col-xs-12 col-md-4 item-receta" style="">
-    					<div class="row">
-     	 <!---<a href="/recetas/pollo" class="col-md-12 descripcion_receta"> --->
-        				<img src="../public/images/receta-pollo.jpg" alt="pollo" title="Pollo - Recetas">    
-      					<h3 class="title_receta col-xs-12 col-md-10 col-md-offset-1"> Pollo</h3>
-      					<p class=" description_recipes col-md-10 col-md-offset-1">
-            			Prepara un delicioso pollo, una de las recetas más clásicas pero muy original</p>
+					<ul class="navbar1" >
+						<li><a class= "inicio" href="">Inicio</a></li>
+						<li><a class= "inicio" href="">Tiendas y promociones</a></li>
+						<li><a class= "inicio" href="">Catalogo</a></li>
+						<li><a class= "inicio" href="">Cobertura</a></li>
+						<li><a class= "inicio" href="">Ayuda y contacto</a></li>
+					</ul>	
+					</div>
 
 				</div>
-		
-
-		</section>
-
-	<footer class="main-footer">
-
-			<div class= "container Menu">
-				<div class="col-md-3 logotipo">
-						<img src ="../public/images/Logo.png" alt= "logotipo" class="logo">
-
-					<div class="hidden-xs">
-						<div class= "derechos">
-						Express Market
-						</div>
-			</div>
-			 
-			<div class= "hidden-xs">
-					<div class="col-md-3">
-							<span class="titulocolumna"> 
-							<h3>Empresa</h3>
-							</span>
-						<ul class="menuEmpresa-footer">
-							<li><a href="/sitioCorporativo">
-							 		Sitio Corporativo </a></li>
-							<li><a href="/oportunidadesLaborales">
-							 		Oportunidades Laborales </a></li>
-							<li><a href="/PreguntasFrecuentes">
-							 		Preguntas Frecuentes </a></li>
-							<li><a href="/CuponesElectonicos">
-							 		Cupones Electronicos </a></li>
-							 <li><a href="/Terminos">
-							 		Terminos Y condiciones </a></li>
-						</ul>	
-					<div class="col-md-3">
-							<span class="tituloColumna2">
-							<h3> Servicio al Cliente </h3>
-							</span>
-						<ul class="menuEmpresa-footer2">
-							<li><a href="/Contáctanos">
-							 		Contáctanos </a></li>
-							<li><a href="/¿ComoComprar?">
-							 		¿Como comprar? </a></li>
-							<li><a href="/Localizador">
-							 		Localizador  </a></li>
-							<li><a href="/FacturasElectronicas">
-							 		Facturas Electrónicas </a></li>
-							 <li><a href="/CondicionesPago">
-							 		Terminos Y condiciones de pago </a></li>	
-
-					<div class="redes-footer">
-							<i class="fab fa-facebook-square"></i>
-							<i class="fab fa-instagram"></i>
-							<i class="fab fa-twitter"></i>
-			</div>
-
+			</div> ---------------------------------------------------------->
 			
-	</footer>
-	
+		<div class= "container">		
+
+	      <!---banner --->
+			 <section class="banner">
+			   <img src="imagenes/banner.jpg" alt="banner" class="banner"> 
+			 <section>
+				
+
+		  <!----marcas destacadas--->
+			<section class="home-desktop_brands wrapper banners-wrapper promos-site">
+				<h2 class= "titulo-home"> Ofertas y Promociones</h2>
+				
+				<div class= "container-banners">
+					<div class="row-0">
+					<div class= "col-4">
+							<div class="box"> 
+								<div class="box-imagen">
+									<a href=""><img class="photo01" src="imagenes/mastellone.jpg" alt="pdto 01"></a></div>
+									<div class="box-texto">
+									 <h3 class= "box-texto-01"> LACTEOS </h3> 
+								</div>	 
+							</div>
+								
+					</div>
+
+					<div class= "col-4">
+							<div class="box"> 
+								<div class="box-imagen">
+									<img class="photo02" src="imagenes/oralB.jpg" alt="pdto 02"></div>
+									<div class="box-texto">
+							 		<h3 class= "box-texto-01"> MIRÁ LAS OFERTAS </h3> 
+								</div>
+							</div>
+					</div>
+
+								
+					
+					<div class= "col-4">
+							<div class="box"> 
+								<div class="box-imagen">
+									<img class="photo03" src="imagenes/quilmes.jpg" alt="pdto 03"></div>
+									<div class="box-texto">
+							 		<h3 class= "box-texto-01"> CERVEZA QUILMES </h3> 
+							</div>
+						</div>
+							
+					</div>	
+
+				</div>
+				</div>
+				
+			</section>		
+			<!-----nuestras recetas------------------>		
+			<section class= "Nuestras-recetas">	
+				<h2 class= "titulo-home"> Nuestras Recetas</h2>
+				<div class= "container-recetas">
+						<div class= "box-imagen-receta">
+							<img class="imagen-receta" src="imagenes/cocinar.jpg" alt="pdto 04"></div>
+				</div>
+
+				<div class= "buscador-recetas">
+					<h2 class= "titulo-buscador">
+						<img class="img-fluid d-none d-md-inline-block mt-1 lazy loaded" data-src="https://www.supermercadosdia.com.ar/wp-content/themes/dia/images/home/recetas/lemon.svg?x15333" width="26" height="26" alt="" src="https://www.supermercadosdia.com.ar/wp-content/themes/dia/images/home/recetas/lemon.svg?x15333" data-was-processed="true">
+						<span class="mx-1">Buscador de Recetas</span>
+						<img class="img-fluid d-none d-md-inline-block lazy loaded" data-src="https://www.supermercadosdia.com.ar/wp-content/themes/dia/images/home/recetas/pizza.svg?x15333" width="26" height="26" alt="" src="https://www.supermercadosdia.com.ar/wp-content/themes/dia/images/home/recetas/pizza.svg?x15333" data-was-processed="true">
+					</h2>
+					<div class= "buscador">
+						<form class="form-inline">
+							<input class="form-control" type="search" placeholder="Más recetas" aria-label="Search">
+							<button class="btn btn-outline-success my-2 my-lg-4" type="submit">Buscar</button>
+						</form>
+						
+					</div>
+				</div>		
+					 
+			</section>
+			
+			<section class="home-banners">
+				<div class="row-1" >
+				<div class="col-6">
+					<div class="box-banner">
+						<p>Prepara una deliciosa lasagna de carne con los mejores ingredientes</p>
+						<img alt=" banner-lasagna" src="imagenes/lasagna.jpg" style="display: flex" width= 450;>
+						
+					</div>
+				</div>
+				
+				<div class="col-6">
+					<div class="box-banner">
+						<P>Una receta especial para recibir a los invitados y compartir una copa de vino.</P>
+						<img alt="banner-pollo" src="imagenes/receta-pollo.jpg" style="display: flex;" width= 450;>	
+					</div>
+				
+				</div>
+				</div>
+			</section>		
+
+		</div>
+
+		<footer>
+            <div class="container-fluid">
+                <div class="footer">
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="imagenes/Logohome.png"
+                                alt="Express Market" class=logo1>
+                        </div>
+                        <div class="col-5">
+                            <ul class= "link">
+                                <li><a href="" class= "link">Información de interés general</a></li>
+                                <li><a href=""class= "link" >Términos y condiciones</a></li>
+                                <li><a href=""class= "link" >Trabaja con nosotros</a></li>
+                                <li><a href="" class= "link">Localizador de tiendas</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-1">
+                            <img src="../public/images/data_fiscal.png"
+                                alt="Express Market" class=logo1>
+                        </div>
+                        <div class="col-4">
+                            <img src=https://w7.pngwing.com/pngs/891/152/png-transparent-logo-graphy-instagram-social-icons-purple-text-photography.png
+                                alt="Express Market" class=redessociales>
+                            <img src="../public/images/facebook.png" alt="Express Market" class=redessociales>
+                            <img src="../public/images/icono-whatsapp.png" alt="Express Market" class=redessociales>
+                            <img src="../public/images/twitter.png" alt="Express Market" class=redessociales>
+                            <img src="../public/images/correo.png" alt="Express Market" class=redessociales>
+                            <img src="../public/images/medios-de-pago.png" alt="Express Market" class="tarjetas">
+                        </div>
+                    </div>
+                </div>
+        </footer>
+	</body>
+
 	<script src="js/jquery.js"></script>
 	<script src="js/boostrap.js"></script>
 
-	</body>
+	
 </html>
