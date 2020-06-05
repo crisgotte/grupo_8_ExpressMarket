@@ -1,76 +1,15 @@
 
- <%- include("/partials/head.ejs")%>
+ <%- include("partials/head.ejs")%>
 
 	<body class= "body">	
-		   <header>
-				<div class="container-fluid">
-					<div  id = "separado" class="row">
-						<div class="col-3">
-							<img src="../public/images/Logo.png"
-								alt="Express Market" class=logo>
-						</div>
-						<div class=col-6>
-							<form class="form-inline">
-								<input class="form-control" type="search" placeholder="más productos" aria-label="Search">
-								<button id= "boton" class="btn btn-outline-success my-2 my-lg-4" type="submit">Buscar</button>
-							</form>
-						</div>
-						<div class="usuario" class=col-3>
-							<button id= "boton" class="btn btn-outline-success my-2 my-lg-4" type="submit">Ingresar</button>
-						</div>
-					</div>
-					<div id= "menu" class="row">
-					   <div class="col-12">
-						<ul class="navbar" >
-							<li><a class= "inicio" href="">Inicio</a></li>
-							<li><a class= "inicio" href="">Tiendas y promociones</a></li>
-							<li><a class= "inicio" href="">Catálogo</a></li>
-							<li><a class= "inicio" href="">Cobertura</a></li>
-							<li><a class= "inicio" href="">Ayuda y contacto</a></li>
-						</ul>   
-						</div>
-					</div>
-				</div>
-			</header>
+		<%-include('partials/header.ejs') %>
 			
-			<!------------------------------------cabecera de la pagina
-			 <div class= "container-header">
-				<div class ="row-header">
-					<div id="logo-header"  class="col-2">
-						<img src="imagenes/Logohome.png" alt="logo" class="logo"> </div>
-					
-					<div class=col-6>
-							<form class="form-inline">
-								<input class="form-control" type="search" placeholder="Buscar más productos, marcas y más" aria-label="Search">
-								<button class="btn btn-outline-success my-2 my-lg-4" type="submit">Buscar</button>
-							</form>
-					</div>	
-
-					<div class="usuario" class=col-4>
-						<button class="btn btn-outline-success my-2 my-lg-4" type="submit">Ingresar</button>
-					</div>
-					
-				</div>
-				<div class="row-header01">
-					<div id="navbar" class="col-md-12">
-
-					<ul class="navbar1" >
-						<li><a class= "inicio" href="">Inicio</a></li>
-						<li><a class= "inicio" href="">Tiendas y promociones</a></li>
-						<li><a class= "inicio" href="">Catalogo</a></li>
-						<li><a class= "inicio" href="">Cobertura</a></li>
-						<li><a class= "inicio" href="">Ayuda y contacto</a></li>
-					</ul>	
-					</div>
-
-				</div>
-			</div> ---------------------------------------------------------->
-			
+	
 		<div class= "container">		
 
-	      <!---banner --->
-			 <section class="banner">
-			   <img src="imagenes/banner.jpg" alt="banner" class="banner"> 
+		  <!---banner --->
+		  			 <section class="banner">
+			   <img src="images/banner.jpg" alt="banner" class="banner"> 
 			 <section>
 				
 
@@ -83,7 +22,7 @@
 					<div class= "col-4">
 							<div class="box"> 
 								<div class="box-imagen">
-									<a href=""><img class="photo01" src="imagenes/mastellone.jpg" alt="pdto 01"></a></div>
+									<a href=""><img class="photo01" src="images/mastellone.jpg" alt="pdto 01"></a></div>
 									<div class="box-texto">
 									 <h3 class= "box-texto-01"> LACTEOS </h3> 
 								</div>	 
@@ -94,7 +33,7 @@
 					<div class= "col-4">
 							<div class="box"> 
 								<div class="box-imagen">
-									<img class="photo02" src="imagenes/oralB.jpg" alt="pdto 02"></div>
+									<img class="photo02" src="images/oralB.jpg" alt="pdto 02"></div>
 									<div class="box-texto">
 							 		<h3 class= "box-texto-01"> MIRÁ LAS OFERTAS </h3> 
 								</div>
@@ -106,7 +45,7 @@
 					<div class= "col-4">
 							<div class="box"> 
 								<div class="box-imagen">
-									<img class="photo03" src="imagenes/quilmes.jpg" alt="pdto 03"></div>
+									<img class="photo03" src="images/quilmes.jpg" alt="pdto 03"></div>
 									<div class="box-texto">
 							 		<h3 class= "box-texto-01"> CERVEZA QUILMES </h3> 
 							</div>
@@ -123,7 +62,7 @@
 				<h2 class= "titulo-home"> Nuestras Recetas</h2>
 				<div class= "container-recetas">
 						<div class= "box-imagen-receta">
-							<img class="imagen-receta" src="imagenes/cocinar.jpg" alt="pdto 04"></div>
+							<img class="imagen-receta" src="images/cocinar.jpg" alt="pdto 04"></div>
 				</div>
 
 				<div class= "buscador-recetas">
@@ -148,7 +87,7 @@
 				<div class="col-6">
 					<div class="box-banner">
 						<p>Prepara una deliciosa lasagna de carne con los mejores ingredientes</p>
-						<img alt=" banner-lasagna" src="imagenes/lasagna.jpg" style="display: flex" width= 450;>
+						<img alt=" banner-lasagna" src="images/lasagna.jpg" style="display: flex" width= 450;>
 						
 					</div>
 				</div>
@@ -156,7 +95,7 @@
 				<div class="col-6">
 					<div class="box-banner">
 						<P>Una receta especial para recibir a los invitados y compartir una copa de vino.</P>
-						<img alt="banner-pollo" src="imagenes/receta-pollo.jpg" style="display: flex;" width= 450;>	
+						<img alt="banner-pollo" src="images/receta-pollo.jpg" style="display: flex;" width= 450;>	
 					</div>
 				
 				</div>
@@ -165,38 +104,7 @@
 
 		</div>
 
-		<footer>
-            <div class="container-fluid">
-                <div class="footer">
-                    <div class="row">
-                        <div class="col-2">
-                            <img src="imagenes/Logohome.png"
-                                alt="Express Market" class=logo1>
-                        </div>
-                        <div class="col-5">
-                            <ul class= "link">
-                                <li><a href="" class= "link">Información de interés general</a></li>
-                                <li><a href=""class= "link" >Términos y condiciones</a></li>
-                                <li><a href=""class= "link" >Trabaja con nosotros</a></li>
-                                <li><a href="" class= "link">Localizador de tiendas</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-1">
-                            <img src="../public/images/data_fiscal.png"
-                                alt="Express Market" class=logo1>
-                        </div>
-                        <div class="col-4">
-                            <img src=https://w7.pngwing.com/pngs/891/152/png-transparent-logo-graphy-instagram-social-icons-purple-text-photography.png
-                                alt="Express Market" class=redessociales>
-                            <img src="../public/images/facebook.png" alt="Express Market" class=redessociales>
-                            <img src="../public/images/icono-whatsapp.png" alt="Express Market" class=redessociales>
-                            <img src="../public/images/twitter.png" alt="Express Market" class=redessociales>
-                            <img src="../public/images/correo.png" alt="Express Market" class=redessociales>
-                            <img src="../public/images/medios-de-pago.png" alt="Express Market" class="tarjetas">
-                        </div>
-                    </div>
-                </div>
-        </footer>
+		<%-include("partials/footer.ejs")%>
 	</body>
 
 	<script src="js/jquery.js"></script>

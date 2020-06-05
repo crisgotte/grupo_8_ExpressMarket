@@ -1,26 +1,7 @@
-<%- include('./partials/head.ejs') %>
+<%- include('partials/head.ejs') %>
 <body>
-    <header>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-9">
-                    <img src="../public/images/Logo.png"
-                        alt="Express Market" class="logo">
-                </div>
-                <div  class=col-lg-3>
-                    <button class="btn btn-outline-success my-2 my-lg-4" type="submit">volver</button>
-                </div>
-            </div>
-        </div>
-    </header>
+    <%- include("partials/header.ejs") %>
     
-    <div class="navbar1">
-	    <a href="">Inicio</a>
-	    <a href="">Tiendas Oficiales</a>
-	   	<a href="">Productos</a>
-        <a href="">Cobertura</a>
-        <a href="">Nosotros</a>
-    </div>
     <h1>Detalle del Producto</h1>
     <div class="product_info">
         <h3 class="description">
@@ -28,24 +9,14 @@
         </h3>
         <h2>$60</h2>
         <div class="name">
-            <img src="../public/images/arroz.jpg" alt="Arroz Lucchetti Largo Fino 1Kg" class="img_product">
+            <img src="/images/arroz.jpg" alt="Arroz Lucchetti Largo Fino 1Kg" class="img_product">
         </div>            
         <div  class="comprar">
             <button class="btn btn-outline-success my-2 my-lg-4" type="submit">Comprar</button>
         </div>
     </div>
    
-    <footer>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-9">
-                    <img src="../public/images/Logo.png"
-                        alt="Express Market" class="logo">
-                </div>
-
-            </div>
-        </div>
-    </footer>
+    <%-include('partials/footer.ejs') %>
 
 
 </body>
