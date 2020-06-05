@@ -324,7 +324,7 @@ h2.titulo-home {
      margin-left: 200px;
      margin-top: 40px;
  }
- .container {
+ .containerVER {
     width: 700px;
     display: flex;
     flex-wrap: wrap;
@@ -375,17 +375,14 @@ h2.titulo-home {
 } 
  
 /*----------Register----------*/
-container-fluid-1{
-    background-color: white;
-        margin-bottom: 20px;
-} 
-.logo{
-        height: 100px;
-        width: 100px;
-        margin-bottom:10px;
-        margin-top:10px;
-        margin-left: 0px;
-} 
+#contenedorRegistro{
+    width: 800px;
+    height: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(204, 204, 204);
+}
+
 h1{
     margin-left: 0px;
 }
