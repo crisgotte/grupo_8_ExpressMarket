@@ -4,19 +4,19 @@
         <div class="container-fluid-1">
             <div class="row">
                 <div class="col-lg-9">
-                    <img src="../public/images/Logo.png"
-                        alt="Express Market" class=logo>
+                    <img src="/images/Logo.png"
+                        alt="Express Market" class="logo4">
                 </div>
             
                 <div class="volver" class=col-lg-3>
-                    <button class="btn btn-outline-success my-2 my-lg-4" type="submit">volver</button>
+                    <button class="btn btn-outline-success my-2 my-lg-4" type="submit" id="volviendo">volver</button>
                 </div>
 
             </div>
         </div>
     </header>
-    <div class= "container">
-        <div class = "row">
+    <div class= "container" id="contenedorDelFormulario">
+        <div class = "row" id="nombresenformulario">
             <div class = "col-lg-6">        
                  <form class="form-inline">
                   <div class="form-group" class="filas">
@@ -28,17 +28,17 @@
             <div class = "col-lg-6">
                 <form class="form-inline">
                    <div class="form-group" class="filas">
-                   <label for="value">ISBN</label>
+                   <label for="value">Código</label>
                    <input type="value" id="inputPassword6" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
                    </div>
                 </form>
          </div>
         </div>
     
-        <div class ="row">
+        <div class ="row" id="sectionCatalogo">
             <div class= "col-lg-12">
                 <form>
-                    <label for="value">Sección</label>
+                    <label for="value" class= "botoncatalogo">Sección</label>
                 <select class="productos">                   
                     <option value="to">Almacén</option>
                     <option value="la">Lacteos</option>
@@ -56,14 +56,14 @@
                     <label class="text">Descripción del producto</label>
                         <textarea name = "mensaje" class= "cuadro"></textarea>
                         
-                        <button type = "reset">Borrar</button>
+                        <button type = "reset" class="reset">Borrar</button>
                 </form>
             </div>
         </div>
         <div class ="row">
             <div class = col-12>
                 <form>
-                    <div class="form-group">
+                    <div class="form-group" id="cargarimagen">
                       <label for="exampleFormControlFile1">Cargar imagen Producto</label>
                       <input type="file" class="form-control-file" id="exampleFormControlFile1">
                     </div>
@@ -73,28 +73,13 @@
 
         <div class="row">
             <div class="col-lg-12">
-                <button class= "boton" type = "submit">Guardar</button>
+                <button class= "boton" type = "submit" id="guardar">Guardar</button>
             </div>
         </div>
         
 
         </div>
-       
-    
-    <footer>
-        <footer>
-            <div class="container-fluid-1">
-                <div class="footer">
-                    <div class="row">
-                        <div class="col-lg-2">
-                            <img src="../public/images/Logo.png"
-                                alt="Express Market" class=logo>
-                        </div>
-                    </div>
-                    </div>
-            </div>
-        </footer>
-
-    
+             
+        <%-include("partials/footer.ejs")%>
 </body>
 </html>

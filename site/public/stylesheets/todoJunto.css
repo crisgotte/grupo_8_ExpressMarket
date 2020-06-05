@@ -26,13 +26,13 @@
       
 } 
 
-.form-inline {
+.form-inlineVER {
     margin-top: 30px;
     margin-left: 70px;
 
 } 
 
-.form-control{
+.form-controlVER{
         padding-right:180px;
         
 } 
@@ -304,7 +304,7 @@ h2.titulo-home {
 
 /*----- formularioDeCarga ------ */
 .container-fluid-1{
-    background-color:rgb(84, 139, 84);
+    background-color:rgb(233, 127, 41);
     margin-bottom: 20px;
 } 
 .logo{
@@ -315,6 +315,13 @@ h2.titulo-home {
         margin-left: 0px;
 } 
 
+.logo4{
+    height: 100px;
+    width: 100px;
+    margin-bottom:10px;
+    margin-top:10px;
+    margin-left: 40px;
+}
 .filas{
     
 } 
@@ -323,29 +330,77 @@ h2.titulo-home {
  .volver{
      margin-left: 200px;
      margin-top: 40px;
+          
  }
- .containerVER {
-    width: 700px;
+ #volviendo {
+     background-color: rgb(26, 134, 32);
+     color:white;
+ }
+ #nombresenformulario {
+     margin-top: 20px;
+     margin-left: 80px;
+     margin-right: 30px;
+ }
+ #sectionCatalogo{
+     margin-top: 20px;
+
+ }
+ #contenedorDelFormulario{
+    width: 800px;
     display: flex;
     flex-wrap: wrap;
     background-color: rgb(204, 204, 204);
+    border: solid 3px rgb(84, 139, 84);
+    border-radius: 20px;
+    color:rgb(24, 58, 24);
+ } 
+ .cuadrodeproducto{
+     margin-top:20px;
  }  
  .cuadro{
-    width: 600px;
+    width: 400px;
     height: 90px;
     vertical-align: top;
+    
  } 
- .text{
+ .botoncatalogo{
+     margin-left:109px;
     
 } 
+.text{
+color:
+}
+
+#cara{
+    margin-top: 20px;
+    background-color: rgb(24, 58, 24);
+}
  .productos{
-     width: 215px;
+     width: 300px;
      height: 35px;
      padding-left:10px;
      margin-top:15px;
      margin-right:0px;
  } 
+ #cargarimagen{
+    margin-top:20px;
+    margin-left: 165px;
+    
 
+ }
+ #guardar{
+     width: 300px;
+     background-color:rgb(233, 127, 41);
+     margin-bottom:20px;
+     border-radius: 5px;
+     color:white;
+ }
+.reset {
+    background-color: rgb(252, 243, 236);
+    margin-top:20px;
+    margin-bottom: 20px;
+    width: 80px;
+}
  .boton{
      margin-top: 70px;
      width: 300px;
@@ -353,38 +408,71 @@ h2.titulo-home {
      margin-left: 200px;
  } 
  .footer{
-    background-color: rgb(233, 127, 41);
-        margin-top:20px;
+    background-color:rgb(230, 248, 213);
+        margin-top:30px;
+        border-top: 5px groove green;
+
 } 
 .redessociales{
     width:30px;
+    margin-top: 20px;    
 } 
+
+}
 .tarjetas{
     width: 300px;
     display: block;
     margin-top:20px;
+    margin-bottom: 20px;
+    margin-left:20px;
 } 
 
-.logo1{
+.data{
     height: 100px;
         width: 100px;
         margin-bottom:10px;
-        margin-top:5px;
-        margin-left: 0px;
+        margin-top:20px;
+        margin-left: 20px;
         margin-right:30px;
 } 
+.data2{
+    height: 100px;
+        width: 100px;
+        margin-bottom:10px;
+        margin-top:20px;
+        margin-left: 0px;
+        padding-right: 20px;
+} 
+.link{
+    color: green;
+
+}
  
 /*----------Register----------*/
 #contenedorRegistro{
     width: 800px;
-    height: 900px;
     display: flex;
     flex-wrap: wrap;
     background-color: rgb(204, 204, 204);
 }
+#sing-form{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: solid 3px rgb(84, 139, 84);
+    padding: 50px;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+    color: rgb(19, 51, 19));
+}
 
-h1{
+.h1{
     margin-left: 0px;
+    color:rgb(84, 139, 84);
 }
 .boton{
     margin-top: 70px;
@@ -392,6 +480,36 @@ h1{
     margin-right: 200px;
     margin-left: 200px;
 } 
+#botonDeRegistro {
+    margin-top: 17px;
+    width: 318px;
+    background-color: rgb(233, 127, 41);
+    color: white;
+}
+#nombre{
+    width: 254px;
+} 
+#user{
+    width:258px;
+}
+#email {
+    width: 273px;
+}
+#password {
+    width: 230px;
+}
+#password2 {
+    width: 174px;
+}
+
+.logoRegistro{
+    height: 111px;
+        width: 116px;
+        margin-bottom:10px;
+        margin-top:39px;
+        margin-left: 17px;
+        margin-right: 93x;
+}
 /*------------productDetail ---------*/
 #ContProd{
     background-color:rgb(84, 139, 84)

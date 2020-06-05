@@ -2,7 +2,12 @@
 <body>
     <%- include('partials/header.ejs') %>
 <div class="container" id= "contenedorRegistro">
-    <h1>Registro</h1>
+    
+    <section id="sing-form">
+    <div class= varios>
+        <h1>REGISTRO</h1>
+       <img src="/images/Logo.png" alt="" class="logoRegistro">
+    </div>
     <form action="" method="post">
         <p>
             <label for="nombre">Nombre:</label>
@@ -10,7 +15,7 @@
         </p>
         <p>
             <label for="apellido">Apellido:</label>
-            <input type="text" name="apellido" id="surname">
+            <input type="text" name="apellido" id="nombre">
         </p>
         <p>
             <label for="usuario">Usuario:</label>
@@ -26,10 +31,11 @@
         </p>
         <p>
             <label for="password_repeat">Repetir Contraseña:</label>
-            <input type="password" name="contraseña" id="password">
+            <input type="password" name="contraseña" id="password2">
         </p>
-        <input type="submit" value="Registrar">
+        <input type="submit" value="Registrar" id="botonDeRegistro">
     </form>
+    </section>
     </div>
 
 <%-include('partials/footer.ejs') %>
