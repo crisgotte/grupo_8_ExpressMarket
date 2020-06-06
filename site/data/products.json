@@ -1,0 +1,25 @@
+[{"id":1,
+  "codeBarEan":7798043561680,
+  "name":"Leche Entera",
+  "brand":"Sancor",
+  "image":"leche.jpg",
+  "category":"Lacteos",
+  "price":85.66
+ },
+ {"id":2,
+  "codeBarEan":7798043561681,
+  "name":"Leche Descremada",
+  "brand":"Sancor",
+  "image":"leche.jpg",
+  "category":"Lacteos",
+  "price":85.66
+ },
+ {"id":3,
+  "codeBarEan":7798043561682,
+  "name":"Naranja",
+  "brand":"Express",
+  "image":"naranja.jpg",
+  "category":"Frutas",
+  "price":15.00
+ }
+]
