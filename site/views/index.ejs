@@ -1,15 +1,14 @@
 
  <%- include("partials/head.ejs")%>
 
-	<body class= "body">	
+	<body>	
 		<%-include('partials/header.ejs') %>
 			
-	
-		<div class= "container">		
+		<div class="container" id="ContenedorHome">		
 
 		  <!---banner --->
 		  			 <section class="banner">
-			   <img src="images/banner.jpg" alt="banner" class="banner"> 
+			   <img src="images/banner.jpg" alt="banner" id="banner"> 
 			 <section>
 				
 
@@ -72,8 +71,8 @@
 						<img class="img-fluid d-none d-md-inline-block lazy loaded" data-src="https://www.supermercadosdia.com.ar/wp-content/themes/dia/images/home/recetas/pizza.svg?x15333" width="26" height="26" alt="" src="https://www.supermercadosdia.com.ar/wp-content/themes/dia/images/home/recetas/pizza.svg?x15333" data-was-processed="true">
 					</h2>
 					<div class= "buscador">
-						<form class="form-inline">
-							<input class="form-control" type="search" placeholder="Más recetas" aria-label="Search">
+						<form class="form-inline" id= "formularioBuscador">
+							<input class="form-control" type="search" placeholder="Más recetas" aria-label="Search" id="barraDelBuscadorReceta">
 							<button class="btn btn-outline-success my-2 my-lg-4" type="submit">Buscar</button>
 						</form>
 						

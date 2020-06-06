@@ -7,6 +7,13 @@
     background-color:white;
     margin-bottom: 20px;
  } 
+ #buscadorHeader{
+    margin-top: 30px;
+    margin-left: 70px;
+ }
+ #buscadorDelMenu {
+     width:370px;
+ }
 #separado{
    margin-bottom: 20px;
    background-image: url("https://image.shutterstock.com/image-photo/pasta-packing-on-shelf-supermarket-260nw-1219556386.jpg");
@@ -26,16 +33,6 @@
       
 } 
 
-.form-inlineVER {
-    margin-top: 30px;
-    margin-left: 70px;
-
-} 
-
-.form-controlVER{
-        padding-right:180px;
-        
-} 
 .usuario{
      margin-left: 200px;
      margin-top: 30px;
@@ -57,7 +54,7 @@
  .navbar li {
     display: inline;
     margin-left: 70px;
-    margin-right: 70px;
+    margin-right: 60px;
 }
 
 
@@ -70,23 +67,24 @@ text-decoration: none;
 font-family: sans-serif;
 font-size: 15px;
 color: white;
+}
 
 /*---------Home --------*/
-.body{
-    height: 100%;
-    margin: 0;
+#ContenedorHome{
+    widows: 1500px;;
+    margin-left: 85px;
     font-family:  "sans-serif";
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: gray;
+    color:gray;
     text-align: center;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     box-sizing: border-box;
     display: block;
 }
      
-}.banner {
+#banner {
     width: 100%;
 }
 
@@ -107,23 +105,22 @@ h2.titulo-home {
 }
 
 .row-0 {
-    width: 960px;
     overflow: hidden;   
-    margin-left: auto;  
-    margin-right: auto;
+    
     
 }
 .col-4 {
-    margin: 10px;
+    margin: 0px;
     float: left;
     position: relative;
+    padding: 13px;
+    background-color: rgb(252, 249, 249);
 }
 
 .box{
     display: block;
     box-sizing: border-box;
-}
-
+}    
 .titulo-home:hover{
     text-decoration: underline;
 }
@@ -140,10 +137,7 @@ h2.titulo-home {
 }   
 .container-banners {
     width: 100%;
-    padding-right: 15px;   
-    padding-left: 15px;
-    margin-left: auto;
-    margin-right: auto;
+  
   
     
  }    
@@ -163,8 +157,14 @@ h2.titulo-home {
      width: 100%;
 
 }
-
-
+#formularioBuscador{
+    margin-left:323px;
+    margin-right: 110px;
+}
+#barraDelBuscadorReceta {
+    width: 400px;
+    margin-right: 5px;
+}
 .row-1 {
     width: 100%;
     overflow: hidden;   
@@ -272,6 +272,10 @@ h2.titulo-home {
     width: 320px;
     background-image: url(https://pulsonoticias.com.ar/wp-content/uploads/2019/08/compras.jpg);
 } 
+#margendeldialogo{
+margin-left: 52px;
+margin-top:5px;
+}
 .resumen{
     width: 80%;
     margin-bottom: -20px;
@@ -533,11 +537,19 @@ h1{
 s
 } 
 .img_product{
-    height: 400px;    
+    height: 300px;    
     margin-bottom:10px;
     margin-top:10px;
     margin-left: 0px;
 }
 .product{
     text-align: center;
+}
+
+#contendorProductoDetalles{
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(204, 204, 204);
+
 }
