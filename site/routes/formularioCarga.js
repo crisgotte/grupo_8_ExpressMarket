@@ -5,4 +5,8 @@ const formularioCargaController = require('../controllers/formularioCargaControl
 /* GET home page. */
 router.get('/', formularioCargaController.principal);
 
+router.post("/", (req, res) =>{
+    console.log(req.body.nombre);
+    res.send("recibido");
+});
 module.exports = router;
