@@ -1,3 +1,9 @@
+let fs= require("fs");
+let path= require("path");
+const productsFilePath = path.dirname(__dirname) + '/data/products.json';
+let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+
+
 const formularioCargaController = {
     principal: (req,res) => {
         res.render('formularioDeCarga');
@@ -18,35 +24,16 @@ store: (req, res) => {
     nuevoProducto.price=req.body.price
     nuevoProducto.mensaje=req.body.mensaje
     nuevoProducto.categoria=req.body.categoria
-    nuevoProducto.imagen=req.body.imagen
+    nuevoProducto.imagen=req.files[0].filename
     
     //res.send(nuevoProducto)
     products.push(nuevoProducto)
-
+  
     let productosModificadosJSON = JSON.stringify(products)
     fs.writeFileSync(productsFilePath, productosModificadosJSON)
-
+res.redirect("/")
     },
-        /*res.render("addProduct");/*
-
-
-//create -Method to store//
-/*store:(req,res,next)=>{
-    req.body.price = Number(req.body.price);
-    req.body.nombre = Number(req.body.nombre);
-
-    let newProduct = {
-        id: products [products.length -1]. id + 1,
-        ...req.body,
-        image: "default-image.png"
-    };
-    let finalProducts = [...products, newProduct];
-    fs. writeFileSync(productsFilePath, JSON.stringify(finalProduct,null, " "));
-    res.redirect("/");
-    
-
- 
-}*/
+        
 };
 
 module.exports = formularioCargaController;

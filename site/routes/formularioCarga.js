@@ -19,10 +19,7 @@ const upload = multer({ storage: storage})
 
 /* GET home page. */
 router.get("/", formularioCargaController.principal);
-//router.post("/Create", upload.any(), formularioCargaController.store);
+router.post("/create", upload.any(), formularioCargaController.store);
 
-router.post("/site/views/formularioDeCarga.ejs", (req, res) =>{
-    console.log(req.body);
-    res.send("recibido");
-});
+
 module.exports = router;
