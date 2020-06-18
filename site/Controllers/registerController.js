@@ -1,24 +1,24 @@
 let fs= require("fs");
+let { check, validationResult, body } = require("express-validator");
 let path= require("path");
+const bcrypt = require('bcrypt');
+
 const usersFilePath = path.dirname(__dirname) + '/data/users.json';
 let users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 
-const registerController = {
+
+ const registerController = {
     principal: (req,res) => {
         res.render('register');
-    }
-};
+    },
 
-
-
-
-store: (req, res) => {
-    // Do the magic
+    store: (req,res) => {
+         // Do the magic
     let nuevoUsers={}
     if(users==""){
         nuevoUsers.id=1
     } else { 
-    let ultimoUsers=Users[Users.length-1]
+    let ultimoUsers=users[users.length-1]
     nuevoUsers.id=ultimoUsers.id+1
     }
     
@@ -26,16 +26,18 @@ store: (req, res) => {
     nuevoUsers.apellido=req.body.apellido
     nuevoUsers.email=req.body.email
     nuevoUsers.contraseña=req.body.contraseña
-    nuevoUsers.contraseña2=req.body.contraseña2
+    //nuevoUsers.contraseña2=req.body.contraseña2
     nuevoUsers.usuario=req.body.usuario
         
     //res.send(nuevoUsers)
-    products.push(nuevoUsers)
+    users.push(nuevoUsers)
   
-    let UserCargadosJSON = JSON.stringify(Users)
-    fs.writeFileSync(UsersFilePath, UsersCargadosJSON)
+    let usersCargadosJSON = JSON.stringify(users)
+    fs.writeFileSync(usersFilePath, usersCargadosJSON)
 res.redirect("/")
-    };
+    },
+};
+
 
  module.exports = registerController;
-
+ 
