@@ -1,0 +1,338 @@
+
+body{
+    height: 100%;
+    margin: 0;
+    font-family:  "sans-serif";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: gray;
+    text-align: center;
+    background-color: #fff;
+    box-sizing: border-box;
+    display: block;
+}
+
+
+/*.....header........*/
+
+#separado{
+   margin-bottom: 20px;
+   background-image: url("https://image.shutterstock.com/image-photo/pasta-packing-on-shelf-supermarket-260nw-1219556386.jpg");
+   
+
+} 
+
+
+.logo{
+        height: 100px;
+        width: 100px;
+        margin-bottom:10px;
+        margin-top:10px;
+        margin-left: 0px;
+} 
+
+.form-inline {
+    margin-top: 30px;
+    margin-left: 70px;
+
+} 
+
+.form-control{
+        padding-right:180px;
+        
+} 
+.usuario{
+     margin-left: 200px;
+     margin-top: 30px;
+}
+
+#boton{
+  background-color:rgb(233, 127, 41);
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} 
+
+#menu{
+    background-color: rgb(233, 127, 41);
+    padding-top: 1px;
+    padding-bottom: 1px;
+    height: 40px;
+} 
+
+ .navbar li {
+    display: inline;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+
+.inicio {
+padding-left: 20px;    
+padding-right: 20px;
+padding-top: 8px;
+padding-bottom: 8px;
+text-decoration: none;
+font-family: sans-serif;
+font-size: 15px;
+color: white;
+     
+}
+
+
+
+
+/*----------header------------------------------
+
+ .container-header {
+    position: relative;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  
+   
+}
+.row-header{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -10px;
+    margin-left: -10px;
+    box-sizing: border-box;
+    background-color: #40a72e;;
+}
+
+
+.logo{
+    width: 70px;
+    margin: auto;
+}
+
+
+.navbar1{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+
+    
+} 
+
+.inicio {
+padding-left: 20px;    
+padding-right: 20px;
+padding-top: 8px;
+padding-bottom: 8px;
+text-decoration: none;
+font-family: sans-serif;
+background-color: yellowgreen;
+font-size: 15px;
+color: white;
+;
+
+}
+
+
+.form-inline{
+    margin:30px;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+}
+
+.form-control{
+    height: 30px;
+    font-size: 1em;
+    width: 100%;
+    border-radius: 3px;
+    display: flex;
+
+}
+
+
+.col-6 {
+    max-width: 50%;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    display: flex;
+    float: left
+    
+ 
+} 
+
+.col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.col-4 {
+    margin: 10px;
+    float: left;
+    position: relative;
+}----------------------------------*/
+
+    
+/*------------banner/ marca destacadas-------------------*/
+
+.banner {
+    width: 100%;
+}
+
+h2.titulo-home {
+    font-family: sans-serif;
+    font-size: 25px ;
+    color: #3C763E;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 40px 0 20px;
+    min-height: 43px;
+    display: block;
+    background-color: gainsboro;
+    padding-top: 15px;
+  
+    
+}
+
+.row-0 {
+    width: 960px;
+    overflow: hidden;   
+    margin-left: auto;  
+    margin-right: auto;
+      
+  
+}
+
+
+.col-4 {
+    margin: 10px;
+    float: left;
+    position: relative;
+}
+
+.box{
+    display: block;
+    box-sizing: border-box;
+}
+
+
+.titulo-home:hover{
+    text-decoration: underline;
+}
+
+
+
+
+.box-texto {
+    color: #3C763E;
+    text-align: center;
+    font-family: sans-serif;
+
+}
+
+ 
+.section {
+    display: block;
+
+}
+   
+.container-banners {
+    width: 100%;
+    padding-right: 15px;   
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  
+    
+ }    
+  
+/*------------nuestras recetas-------*/
+ .imagen-receta{ 
+    margin:  20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}    
+
+.box-imagen-receta{
+     display: flex;
+     position: relative;
+     left: 0px;
+     background-color: gainsboro;
+     width: 100%;
+
+}
+
+
+.row-1 {
+    width: 100%;
+    overflow: hidden;   
+    margin-left: 60px;  
+    margin-right: 60px;
+    justify-content: space-around;
+   
+    
+}
+
+.col-6 {
+    max-width: 50%;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    display: flex;
+    float: left
+    
+ 
+} 
+.home-banners{
+    display: flex;
+    position: relative;
+    background-color: gainsboro;
+    width: 100%;
+}
+
+.box-banner{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    position: relative;
+    font-family: sans-serif;
+    font-size: 15px;
+    
+}
+
+/*----footer*/
+
+.link{
+    color: white;
+    margin-top:20px;
+}  
+.redessociales{
+    width:20px;
+} 
+.tarjetas{
+    width: 300px;
+    display: block;
+    margin-top:20px;
+} 
+.logo1{
+    height: 100px;
+    width: 100px;
+    margin-bottom:10px;
+    margin-top:10px;
+    margin-left: 0px;
+    margin-right:30px;
+}
+
+.footer{
+
+  background-color: #40a72e;
+  margin-bottom: 20px;
+}
