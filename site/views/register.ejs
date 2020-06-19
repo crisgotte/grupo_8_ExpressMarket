@@ -1,63 +1,45 @@
-<<<<<<< HEAD:site/views/register.ejs
- <%- include('./partials/head.ejs') %>
-=======
-<!DOCTYPE html>
-<html lang="sp">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../public/stylesheets/register.css">
-	<link rel="stylesheet" href="../public/stylesheets/reset.css">
-	<title>Registrate en Express Market</title>
-</head>
-
->>>>>>> master:site/views/register.html
+<%- include('partials/head.ejs') %>
 <body>
-
-    <header>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-9">
-                    <img src="../public/images/Logo.png"
-                        alt="Express Market" class=logo>
-                </div>
-                <div  class=col-lg-3>
-                    <button class="btn btn-outline-success my-2 my-lg-4" type="submit">volver</button>
-                </div>
-            </div>
-        </div>
-    </header>
-
-	<div class="container">
-		<div class="form__top">
-			<h2>Formulario de Registro</h2>
-		</div>		
-		<form class="form__reg" action="">
-            <input class="input" type="text" placeholder="&#128100;  Nombre" required autofocus>
-            <input class="input" type="text" placeholder="&#128100;  Apellido" required autofocus>
-            <input class="input" type="email" placeholder="&#9993;  Email" required>
-            <input class="input" type="text" placeholder="&#128100;  Usuario" required autofocus>
-            <input class="input" type="password" placeholder="&#128100;  Contrseña" required autofocus>
-            <input class="input" type="password" placeholder="&#128100;  Repetir contraseña" required autofocus>
-            <div class="btn__form">
-            	<input class="btn__submit" type="submit" value="Guardar">
-            	<input class="btn__reset" type="reset" value="Borrar">	
-            </div>
-		</form>
+    <%- include('partials/header.ejs') %>
+<div class="container" id= "contenedorRegistro">
+    
+    <section id="sing-form">
+    <div class= varios>
+        <h1>REGISTRO</h1>
+       <img src="/images/Logo.png" alt="" class="logoRegistro">
     </div>
-    
-    
-    <footer>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-9">
-                    <img src="../public/images/Logo.png"
-                        alt="Express Market" class=logo>
-                </div>
-            </div>
-        </div>
-    </footer>
-	
+    <form action="/register/create" method="POST">
+        <p>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre">
+        </p>
+        <p>
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" id="nombre">
+        </p>
+        <p>
+            <label for="usuario">Usuario:</label>
+            <input type="text" name="usuario" id="user">
+        </p>
+        <p>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email">
+        </p>
+        <p>
+            <label for="password">Contraseña:</label>
+            <input type="password" name="contraseña" id="password">
+        </p>
+        <p>
+            <label for="password_repeat">Repetir Contraseña:</label>
+            <input type="password" name="contraseña2" id="password2">
+        </p>
+        <input type="submit" value="Registrar" id="botonDeRegistro">
+    </form>
+    </section>
+    </div>
+
+<%-include('partials/footer.ejs') %>
+
+
 </body>
 </html>

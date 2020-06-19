@@ -1,30 +1,10 @@
-<%-include('./partials/head.ejs') %>
+<%-include('partials/head.ejs') %>
 
 <body>
-    <header>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-3">
-                    <img src="../public/images/Logo.png"
-                        alt="Express Market" class=logo>
-                </div>
-                <div class=col-lg-6>
-                    <form class="form-inline">
-                        <input class="form-control" type="search" placeholder="más productos" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-lg-4" type="submit">buscar</button>
-                    </form>
-                </div>
-                <div class="usuario" class=col-lg-3>
-                    <button class="btn btn-outline-success my-2 my-lg-4" type="submit">Ingresar</button>
-                </div>
-
-            </div>
-        </div>
-
-    </header>
-    <div class="container">
-        <div class="contenedor-1">
-            <div class="detalles">
+    <%-include('partials/header.ejs') %>
+    <div class="container" id= "contenedorN">
+        <div class="contenedor-1" id= ContenienteN>
+            <div class="detalles1">
                 <div class="row">
                     <div class=col-lg-2>Producto</div>
                     <div class=col-lg-4>Descripción</div>
@@ -35,7 +15,7 @@
             <div class="filas">
                 <div class="row">
                     <div class=col-lg-2>
-                        <img src="../public/images/Pure-de-Tomate-La-Costena-Lata-2_95-Kg.jpg"
+                        <img src="images/Pure-de-Tomate-La-Costena-Lata-2_95-Kg.jpg"
                         alt= "lata de tomate" class="productoseleccionado">
                     </div>
                     <div class=col-lg-4>Acá va la descripción del producto comprado</div>
@@ -61,7 +41,7 @@
             <div class="filas3">
                 <div class="row">
                     <div class=col-lg-2>
-                        <img src="../public/images/espinaca-500g.png"  alt="espinaca congelada" class="productoseleccionado">
+                        <img src="images/espinaca-500g.png"  alt="espinaca congelada" class="productoseleccionado">
                     </div>
                     <div class=col-lg-4>Acá va la descripción del producto comprado</div>
                     <div class=col-lg-3>
@@ -86,7 +66,7 @@
             <div class=filas>
                 <div class="row">
                     <div class=col-lg-2>
-                        <img src="../public/images/paty_clasico_320gr.jpg" alt="hamburgesa" class="productoseleccionado">
+                        <img src="images/paty_clasico_320gr.jpg" alt="hamburgesa" class="productoseleccionado">
                     </div>
                     <div class=col-lg-4>Acá va la descripción del producto comprado</div>
                     <div class=col-lg-3>
@@ -111,7 +91,7 @@
             <div class=filas3>
                 <div class="row">
                     <div class=col-lg-2>
-                        <img src="../public/images/exquisita_vainilla.JPG"
+                        <img src="images/exquisita_vainilla.JPG"
                             alt="exquisita" class="productoseleccionado">
                     </div>
                     <div class=col-lg-4>Acá va la descripción del producto comprado</div>
@@ -136,8 +116,8 @@
             </div>
         </div>
 
-        <div class="contenedor-2">
-            <div class ="row">
+        <div class="contenedor-2" id="carritoContenedor">
+            <div class ="row" id="margendeldialogo">
                 <div class="col-lg-2">
                     <form class = "form-inline" action = "" method="POST">
                         <p>
@@ -166,45 +146,14 @@
               </div>
               <div class="row">
                   <div class="col-2">
-                      <img src="../public/images/levite-15-600x471.jpg" alt="levite" class="levite">
+                      <img src="images/levite-15-600x471.jpg" alt="levite" class="levite">
                   </div>
               </div>
           </div>
           </div>
           </div>
-        <footer>
-            <div class="container-fluid">
-                <div class="footer">
-                    <div class="row">
-                        <div class="col-lg-2">
-                            <img src="../public/images/Logo.png"
-                                alt="Express Market" class=logo>
-                        </div>
-                        <div class="col-lg-5">
-                            <ul class= "link">
-                                <li><a href="" class= "link">Información de interés general</a></li>
-                                <li><a href=""class= "link" >Términos y condiciones</a></li>
-                                <li><a href=""class= "link" >Trabaja con nosotros</a></li>
-                                <li><a href="" class= "link">Localizador de tiendas</a></li>
-                            </ul>
-                        </div>
 
-                        <div class="col-lg-1">
-                            <img src="../public/images/data_fiscal.png"
-                                alt="Express Market" class=logo1>
-                        </div>
-                        <div class="col-lg-4">
-                            <img src=https://w7.pngwing.com/pngs/891/152/png-transparent-logo-graphy-instagram-social-icons-purple-text-photography.png
-                                alt="Express Market" class=redessociales>
-                            <img src="../public/images/facebook.png" alt="Express Market" class=redessociales>
-                            <img src="../public/images/icono-whatsapp.png" alt="Express Market" class=redessociales>
-                            <img src="../public/images/twitter.png" alt="Express Market" class=redessociales>
-                            <img src="../public/images/correo.png" alt="Express Market" class=redessociales>
-                            <img src="../public/images/medios-de-pago.png" alt="Express Market" class="tarjetas">
-                        </div>
-                    </div>
-                </div>
-        </footer>
+          <%-include('partials/footer.ejs') %>
 
 </body>
 

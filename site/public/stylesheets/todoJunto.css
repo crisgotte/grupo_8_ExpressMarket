@@ -1,21 +1,19 @@
-/*---------Home --------*/
-body{
-    height: 100%;
-    margin: 0;
-    font-family:  "sans-serif";
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: gray;
-    text-align: center;
-    background-color: #fff;
-    box-sizing: border-box;
-    display: block;
-}
+
 
 
 /*.....header........*/
 
+.container-fluid{
+    background-color:white;
+    margin-bottom: 20px;
+ } 
+ #buscadorHeader{
+    margin-top: 30px;
+    margin-left: 70px;
+ }
+ #buscadorDelMenu {
+     width:370px;
+ }
 #separado{
    margin-bottom: 20px;
    background-image: url("https://image.shutterstock.com/image-photo/pasta-packing-on-shelf-supermarket-260nw-1219556386.jpg");
@@ -24,24 +22,17 @@ body{
 } 
 
 
-.logo{s
+.logo{
         height: 100px;
         width: 100px;
         margin-bottom:10px;
         margin-top:10px;
         margin-left: 0px;
+        margin-right: 120px;
+        background-color: rgb(233, 127, 41);
+      
 } 
 
-.form-inline {
-    margin-top: 30px;
-    margin-left: 70px;
-
-} 
-
-.form-control{
-        padding-right:180px;
-        
-} 
 .usuario{
      margin-left: 200px;
      margin-top: 30px;
@@ -51,7 +42,7 @@ body{
   background-color:rgb(233, 127, 41);
   color: white;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-} 
+}
 
 #menu{
     background-color: rgb(233, 127, 41);
@@ -63,7 +54,7 @@ body{
  .navbar li {
     display: inline;
     margin-left: 70px;
-    margin-right: 70px;
+    margin-right: 60px;
 }
 
 
@@ -76,8 +67,24 @@ text-decoration: none;
 font-family: sans-serif;
 font-size: 15px;
 color: white;
+}
+
+/*---------Home --------*/
+#ContenedorHome{
+    widows: 1500px;;
+    margin-left: 85px;
+    font-family:  "sans-serif";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color:gray;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    display: block;
+}
      
-}.banner {
+#banner {
     width: 100%;
 }
 
@@ -98,58 +105,43 @@ h2.titulo-home {
 }
 
 .row-0 {
-    width: 960px;
     overflow: hidden;   
-    margin-left: auto;  
-    margin-right: auto;
-      
-  
+    
+    
 }
-
-
 .col-4 {
-    margin: 10px;
+    margin: 0px;
     float: left;
     position: relative;
+    padding: 13px;
+    background-color: rgb(252, 249, 249);
 }
 
 .box{
     display: block;
     box-sizing: border-box;
-}
-
-
+}    
 .titulo-home:hover{
     text-decoration: underline;
 }
-
-
-
 
 .box-texto {
     color: #3C763E;
     text-align: center;
     font-family: sans-serif;
-
 }
 
- 
 .section {
     display: block;
 
-}
-   
+}   
 .container-banners {
     width: 100%;
-    padding-right: 15px;   
-    padding-left: 15px;
-    margin-left: auto;
-    margin-right: auto;
+  
   
     
  }    
-  
-/*------------nuestras recetas-------*/
+  /*------------nuestras recetas-------*/
  .imagen-receta{ 
     margin:  20px;
     width: 90%;
@@ -165,8 +157,14 @@ h2.titulo-home {
      width: 100%;
 
 }
-
-
+#formularioBuscador{
+    margin-left:323px;
+    margin-right: 110px;
+}
+#barraDelBuscadorReceta {
+    width: 400px;
+    margin-right: 5px;
+}
 .row-1 {
     width: 100%;
     overflow: hidden;   
@@ -230,51 +228,25 @@ h2.titulo-home {
 
 .footer{
 
-  background-color: #40a72e;
+  background-color:rgb(233, 127, 41);
   margin-bottom: 20px;
 }
 
 /*-------CarritoDeCompra(formato2)-----*/
-.container-fluid{
-    background-color:green;
-margin-bottom: 20px;
-} 
-.logo{
-        height: 100px;
-        width: 100px;
-        margin-bottom:10px;
-        margin-top:10px;
-        margin-left: 0px;
-} 
-.form-inline {
-    margin-top: 40px;
-    margin-left: 70px;
-  
-   } 
-   .form-control{
-        padding-right:100px;
-        
-    } 
 
- .usuario{
-     margin-left: 200px;
-     margin-top: 40px;
-     } 
- 
- 
- .container{
+ #contenedorN{
      width:1350px;
      display:flex;
      flex-wrap: wrap;
      
  } 
  
- .contenedor-1{
+ #ContenienteN{
      width:800px;
      margin-left: -40px;
 
  } 
- .detalles{
+ .detalles1{
      background-color: rgb(255, 247, 180);
  } 
 
@@ -294,12 +266,16 @@ margin-bottom: 20px;
      margin-top:20px;
       } 
 
-.contenedor-2{
+#carritoContenedor{
     background-color: rgb(255, 226, 226);        
     margin-left:20px;
     width: 320px;
     background-image: url(https://pulsonoticias.com.ar/wp-content/uploads/2019/08/compras.jpg);
 } 
+#margendeldialogo{
+margin-left: 52px;
+margin-top:5px;
+}
 .resumen{
     width: 80%;
     margin-bottom: -20px;
@@ -310,34 +286,6 @@ margin-bottom: 20px;
     margin-left: 20px;
     margin-top: 10px;
 } 
-
-.footer{
-    background-color:green;
-
-}
-.link{
-    color: white;
-    margin-top:20px;
-    
-}  
-.redessociales{
-    width:20px;
-} 
-.tarjetas{
-    width: 300px;
-    display: block;
-    margin-top:20px;
-} 
-
-.logo1{
-    height: 100px;
-        width: 100px;
-        margin-bottom:10px;
-        margin-top:10px;
-        margin-left: 0px;
-        margin-right:30px;
-} 
-
 .levite{
     width: 300px;
     height: 200px;
@@ -359,8 +307,8 @@ margin-bottom: 20px;
 } 
 
 /*----- formularioDeCarga ------ */
-.container-fluid{
-    background-color:rgb(84, 139, 84);
+.container-fluid-1{
+    background-color:rgb(233, 127, 41);
     margin-bottom: 20px;
 } 
 .logo{
@@ -371,6 +319,13 @@ margin-bottom: 20px;
         margin-left: 0px;
 } 
 
+.logo4{
+    height: 100px;
+    width: 100px;
+    margin-bottom:10px;
+    margin-top:10px;
+    margin-left: 40px;
+}
 .filas{
     
 } 
@@ -379,29 +334,77 @@ margin-bottom: 20px;
  .volver{
      margin-left: 200px;
      margin-top: 40px;
+          
  }
- .container {
-    width: 700px;
+ #volviendo {
+     background-color: rgb(26, 134, 32);
+     color:white;
+ }
+ #nombresenformulario {
+     margin-top: 20px;
+     margin-left: 80px;
+     margin-right: 30px;
+ }
+ #sectionCatalogo{
+     margin-top: 20px;
+
+ }
+ #contenedorDelFormulario{
+    width: 800px;
     display: flex;
     flex-wrap: wrap;
     background-color: rgb(204, 204, 204);
+    border: solid 3px rgb(84, 139, 84);
+    border-radius: 20px;
+    color:rgb(24, 58, 24);
+ } 
+ .cuadrodeproducto{
+     margin-top:20px;
  }  
  .cuadro{
-    width: 600px;
+    width: 400px;
     height: 90px;
     vertical-align: top;
+    
  } 
- .text{
+ .botoncatalogo{
+     margin-left:109px;
     
 } 
+.text{
+color:
+}
+
+#cara{
+    margin-top: 20px;
+    background-color: rgb(24, 58, 24);
+}
  .productos{
-     width: 215px;
+     width: 300px;
      height: 35px;
      padding-left:10px;
      margin-top:15px;
      margin-right:0px;
  } 
+ #cargarimagen{
+    margin-top:20px;
+    margin-left: 165px;
+    
 
+ }
+ #guardar{
+     width: 300px;
+     background-color:rgb(233, 127, 41);
+     margin-bottom:20px;
+     border-radius: 5px;
+     color:white;
+ }
+.reset {
+    background-color: rgb(252, 243, 236);
+    margin-top:20px;
+    margin-bottom: 20px;
+    width: 80px;
+}
  .boton{
      margin-top: 70px;
      width: 300px;
@@ -409,55 +412,111 @@ margin-bottom: 20px;
      margin-left: 200px;
  } 
  .footer{
-    background-color:rgb(84, 139, 84);
-    margin-top:20px;
+    background-color:rgb(230, 248, 213);
+        margin-top:30px;
+        border-top: 5px groove green;
+
 } 
 .redessociales{
     width:30px;
+    margin-top: 20px;    
 } 
+
+}
 .tarjetas{
     width: 300px;
     display: block;
     margin-top:20px;
+    margin-bottom: 20px;
+    margin-left:20px;
 } 
 
-.logo1{
+.data{
     height: 100px;
         width: 100px;
         margin-bottom:10px;
-        margin-top:5px;
-        margin-left: 0px;
+        margin-top:20px;
+        margin-left: 20px;
         margin-right:30px;
 } 
+.data2{
+    height: 100px;
+        width: 100px;
+        margin-bottom:10px;
+        margin-top:20px;
+        margin-left: 0px;
+        padding-right: 20px;
+} 
+.link{
+    color: green;
+
+}
  
 /*----------Register----------*/
-container-fluid{
-    background-color:rgb(84, 139, 84);
-    margin-bottom: 20px;
-} 
-.logo{
-        height: 100px;
-        width: 100px;
-        margin-bottom:10px;
-        margin-top:10px;
-        margin-left: 0px;
-} 
-h1{
+#contenedorRegistro{
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(204, 204, 204);
+}
+#sing-form{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: solid 3px rgb(84, 139, 84);
+    padding: 50px;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+    color: rgb(19, 51, 19));
+}
+
+.h1{
     margin-left: 0px;
+    color:rgb(84, 139, 84);
 }
 .boton{
     margin-top: 70px;
     width: 300px;
     margin-right: 200px;
     margin-left: 200px;
-}
-.footer{
-    background-color:rgb(84, 139, 84);
-    margin-top:20px;
 } 
+#botonDeRegistro {
+    margin-top: 17px;
+    width: 318px;
+    background-color: rgb(233, 127, 41);
+    color: white;
+}
+#nombre{
+    width: 254px;
+} 
+#user{
+    width:258px;
+}
+#email {
+    width: 273px;
+}
+#password {
+    width: 230px;
+}
+#password2 {
+    width: 174px;
+}
+
+.logoRegistro{
+    height: 111px;
+        width: 116px;
+        margin-bottom:10px;
+        margin-top:39px;
+        margin-left: 17px;
+        margin-right: 93x;
+}
 /*------------productDetail ---------*/
-.container-fluid{
-    background-color:rgb(84, 139, 84);
+#ContProd{
+    background-color:rgb(84, 139, 84)
     margin-bottom: 20px;
 } 
 .logo{
@@ -475,17 +534,22 @@ h1{
     width: 300px;
     margin-right: 200px;
     margin-left: 200px;
-}
-.footer{
-    background-color:rgb(84, 139, 84);
-    margin-top:20px;
+s
 } 
 .img_product{
-    height: 400px;    
+    height: 300px;    
     margin-bottom:10px;
     margin-top:10px;
     margin-left: 0px;
 }
 .product{
     text-align: center;
+}
+
+#contendorProductoDetalles{
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(204, 204, 204);
+
 }
