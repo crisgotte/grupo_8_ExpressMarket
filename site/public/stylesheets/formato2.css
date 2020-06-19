@@ -1,6 +1,6 @@
 .container-fluid{
-    background-color:green;
-margin-bottom: 20px;
+    background-color: #40A72E;
+    margin-top:20px;
 } 
 .logo{
         height: 100px;
@@ -75,9 +75,9 @@ margin-bottom: 20px;
 } 
 
 .footer{
-    background-color:green;
-
-}
+    background-color: #40A72E;
+    margin-top:20px;
+} 
 .link{
     color: white;
     margin-top:20px;
