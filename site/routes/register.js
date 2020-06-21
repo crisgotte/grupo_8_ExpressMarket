@@ -19,7 +19,7 @@ const upload = multer({storage: storage});
 
 /* GET home page. */
 router.get('/', registerController.principal);
-router.post("/create",[
+/*router.post("/create",[
     //check("nombre").isLength({min:3}),
     //check("apellido").isLength({min:3}),
     //check("contraseña").isLength({min:8}),
@@ -27,6 +27,6 @@ router.post("/create",[
     check("user").isLength()
 ], registerController.store);
 
-
+*/
 
 module.exports = router;
