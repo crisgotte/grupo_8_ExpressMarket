@@ -25,7 +25,7 @@ store: (req, res) => {
     nuevoProducto.mensaje=req.body.mensaje
     nuevoProducto.categoria=req.body.categoria
     nuevoProducto.imagen=req.files[0].filename
-    
+        
     //res.send(nuevoProducto)
     products.push(nuevoProducto)
   
