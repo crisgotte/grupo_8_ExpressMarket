@@ -487,7 +487,7 @@ color:
 #botonDeRegistro {
     margin-top: 17px;
     width: 318px;
-    background-color: rgb(233, 127, 41);
+    background-color:rgb(250, 34, 34);
     color: white;
 }
 #nombre{
@@ -553,3 +553,47 @@ s
     background-color: rgb(204, 204, 204);
 
 }
+/*-------------------LOGIN--------------*/
+#contenedorRegistro-1{
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color:hsl(132, 100%, 33%);
+}
+#sing-form-2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: solid 5px rgb(243, 248, 243);
+    padding: 50px;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 16px;
+    color: rgb(255, 255, 255);
+} 
+.logoRegistro-login{
+    height: 174px;
+    width: 160px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    margin-left: -11px;
+}
+
+.ingresar{
+    color: white;
+    margin-left: 99px;
+    margin-top:25px;
+    text-decoration: underline;
+} 
+
+#botonDeRegistro-2 {
+    margin-top: 17px;
+    width: 317px;
+    background-color: rgb(250, 34, 34);
+    color: white;
+    margin-bottom: 11px;
+    
+} 
