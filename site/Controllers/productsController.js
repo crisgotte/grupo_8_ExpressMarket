@@ -5,12 +5,14 @@ const productsFilePath = path.join(__dirname, '../data/products.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 
-const almacen = products.filter(almacen => almacen.category == 'almacen');
+const almacen = products.filter(almacen => almacen.categoria == 'almacen');
 
 const productsController = {
     principal: (req,res) => {
+        console.log(almacen);
         res.render('products', {
-              almacen,
+              
+            products: almacen
               
           });
       },

@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var multer = require('multer');
+const path = require("path");
 
 const formularioCargaController = require('../controllers/formularioCargaController')
 
@@ -10,7 +11,7 @@ const storage = multer.diskStorage({
 
     },
     filename: (req, file, cb) => {
-        cb(null, Date.now() + " ");
+               cb(null, Date.now() + path.extname(file.originalname));
 
     } 
 

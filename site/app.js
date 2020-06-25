@@ -13,6 +13,7 @@ var carritoRouter = require('./routes/carrito');
 var registerRouter = require("./routes/register");
 var productDetailRouter = require("./routes/productDetail");
 var productsRouter = require("./routes/products");
+var loginRouter = require("./routes/login");
 
 var app = express();
 
@@ -33,6 +34,8 @@ app.use('/carrito', carritoRouter);
 app.use("/register", registerRouter);
 app.use("/productDetail", productDetailRouter);
 app.use("/products", productsRouter);
+app.use("/login", loginRouter);
+
 
 
 // catch 404 and forward to error handler

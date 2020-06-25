@@ -1,0 +1,27 @@
+<%- include("partials/head.ejs")%>
+
+	<body>	
+        <%-include('partials/header.ejs') %>
+        <div class= varios>
+            <h1>Ingresar</h1>
+           <img src="/images/Logo.png" alt="" class="logoRegistro">
+        </div>
+        <form action="/register/create" method="POST">
+           
+            <p>
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email">
+            </p>
+            <p>
+                <label for="password">Contraseña:</label>
+                <input type="password" name="contrasena" id="password">
+            </p>
+           
+            <input type="submit" value="ingresar" id="botonDeRegistro">
+            <input type="submit" value="Crea tu cuenta" id="botonDeRegistro" href="/register">
+        </form>
+        </section>
+        </div>
+        <%-include("partials/footer.ejs")%>
+</body>
+</html>

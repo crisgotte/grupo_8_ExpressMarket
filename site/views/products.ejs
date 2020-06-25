@@ -6,14 +6,14 @@
 	<div class= "container">
 		<div class = "row">
 			<div class= "col-3">
-			<% for (let i =0; i < products.length; i++) { 
+			<% for (product of products) { 
 				%>
 				<figure class="product-box_image">
-					<img src="" alt="imagen de producto">
+					<img src="/images/products/<%= product.imagen %>" alt="imagen de producto">
 				</figure>
 				<article class="product-box_data">
-					<h2>$<%= thousandGenerator(finalPrice) %></h2>
-			<%= products[i].nombre%>
+					
+			<%= product.nombre %>
 				</li>
 			
 			<%} %>  
