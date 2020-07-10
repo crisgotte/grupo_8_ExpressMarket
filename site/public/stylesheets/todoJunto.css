@@ -558,12 +558,12 @@ s
     width: 800px;
     display: flex;
     flex-wrap: wrap;
-    background-color:hsl(132, 100%, 33%);
+    background-color: rgb(204, 204, 204);
 }
 #sing-form-2{
     margin-top: 10px;
     margin-bottom: 10px;
-    border: solid 5px rgb(243, 248, 243);
+    border: solid 3px rgb(10, 97, 10);
     padding: 50px;
     width: 100%;
     border-radius: 20px;
@@ -572,7 +572,7 @@ s
     flex-direction: row;
     justify-content: space-around;
     margin-top: 16px;
-    color: rgb(255, 255, 255);
+    color:black;
 } 
 .logoRegistro-login{
     height: 174px;
@@ -583,7 +583,7 @@ s
 }
 
 .ingresar{
-    color: white;
+    color: black;
     margin-left: 99px;
     margin-top:25px;
     text-decoration: underline;
@@ -597,3 +597,158 @@ s
     margin-bottom: 11px;
     
 } 
+/*====== Products ======*/
+#products-wrapper {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color:rgb(203, 212, 201) ;
+  }
+  
+  .products-title {
+    font-size: 2.4em;
+    font-weight: 400;
+    color: var(--gray);
+  }
+  
+  .product-box {
+    background-color: #ffffff;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 300ms;
+    margin: 20px 0;
+  }
+  .estiloDelNombre{
+      font-family:Arial, Helvetica, sans-serif;
+      font-weight: 200;
+      text-align: justify;
+      text-decoration: none;
+  }
+
+  .estiloDelmensaje{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    text-align: justify;
+    text-decoration: none;
+} 
+
+  .estiloDelPrecio{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    text-align: right;
+    color: rgb(209, 12, 12);
+  } 
+  
+  .product-box a {
+    display: block;
+  }
+  
+  .product-box_image {
+    border-bottom: 1px solid var(--light-gray);
+  }
+  
+  .product-box_data {
+    padding: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .product-box_data h2 {
+    font-size: 2.4em;
+    font-weight: 300;
+    margin: 0;
+  }
+  
+  .product-box_data p {
+    font-size: 1.5em;
+    font-weight: 300;
+    color: var(--green);
+    margin: 0 0 0 10px;
+  }
+  
+  .product-box_data p {
+    font-size: 1.5em;
+    width: 100%;
+    color: var(--gray);
+    margin: 0;
+    height: 0;
+    transition: 300ms;
+    overflow: hidden;
+  }
+  
+  .product-box_data i {
+    color: var(--green);
+    font-size: 1.8em;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border: solid 1px;
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+    right: 15px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 300ms;
+  }
+  
+  .product-box:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .product-box:hover p{
+    height: 40px;
+    margin-top: 15px;
+  }
+  
+  .product-box:hover i{
+    transform: rotate(360deg);
+    box-shadow: 0 0 5px var(--green);
+  }
+
+  /*-------------*/
+   {
+    box-sizing-1: border-box;
+  }
+  
+  /*html, body {
+    min-height: 100vh;
+    margin: 0;
+    font-size: 10px;
+  }
+  
+  body {
+    font-family: var(--base-font-family);
+    font-weight: 300;
+    background-color: var(--light-gray);
+  }
+  
+  ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+  }
+  */
+  figure {
+    margin: 0;
+    padding: 0;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  input {
+    font-family: inherit;
+  }
+  

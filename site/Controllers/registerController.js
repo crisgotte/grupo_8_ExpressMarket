@@ -26,7 +26,7 @@ let users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
     nuevoUsers.nombre=req.body.nombre
     nuevoUsers.apellido=req.body.apellido
     nuevoUsers.email=req.body.email
-    nuevoUsers.contrasena=req.body.contrasena
+    nuevoUsers.contrasena= bcrypt.hashSync(req.body.contrasena,10)
     //nuevoUsers.contraseña2=req.body.contraseña2
     nuevoUsers.usuario=req.body.usuario
         
