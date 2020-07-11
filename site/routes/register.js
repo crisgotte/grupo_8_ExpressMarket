@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var multer = require('multer');
+const path = require("path");
 let { check, validationResult, body } = require("express-validator");
 const registerController = require('../controllers/registerController');
 
@@ -25,7 +26,8 @@ router.post("/create",
     check("apellido").isLength({min:3}),
     check("contrasena").isLength({min:8}),
     check("email").isEmail(),
-    check("usuario").isLength()
+    check("usuario").isLength(),
+    check("imagen").isLocale()
 ],
  registerController.store);
 
