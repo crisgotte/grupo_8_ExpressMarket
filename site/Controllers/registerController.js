@@ -12,7 +12,7 @@ let users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
         res.render('register');
     },
 
-    store: (req,res) => {
+    store: (req,res,next) => {
          // Do the magic
          console.log(req.body)
     let nuevoUsers={}
@@ -26,7 +26,7 @@ let users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
     nuevoUsers.nombre=req.body.nombre
     nuevoUsers.apellido=req.body.apellido
     nuevoUsers.email=req.body.email
-    nuevoUsers.contrasena= bcrypt.hashSync(req.body.contrasena,10)
+    nuevoUsers.contrasena = bcrypt.hashSync(req.body.contrasena,10)
     nuevoUsers.usuario=req.body.usuario
     nuevoUsers.imagen = req.files[0].filename
         

@@ -227,7 +227,6 @@ h2.titulo-home {
 }
 
 .footer{
-
   background-color:rgb(233, 127, 41);
   margin-bottom: 20px;
 }
@@ -412,10 +411,14 @@ color:
      margin-left: 200px;
  } 
  .footer{
-    background-color:rgb(230, 248, 213);
+    background-color:rgb(253, 255, 255);
         margin-top:30px;
-        border-top: 5px groove green;
+        border-top: 5px groove rgb(106, 124, 106);
 
+} 
+#ContProd{
+    background-color:rgb(247, 248, 247);
+    margin-bottom: 20px;
 } 
 .redessociales{
     width:30px;
@@ -516,10 +519,7 @@ color:
 }
  
 /*------------productDetail ---------*/
-#ContProd{
-    background-color:rgb(84, 139, 84)
-    margin-bottom: 20px;
-} 
+
 .logo{
         height: 100px;
         width: 100px;

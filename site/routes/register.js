@@ -11,7 +11,7 @@ const storage = multer.diskStorage({
 
     },
     filename: (req, file, cb) => {
-        cb(null, Date.now() + " ");
+        cb(null, Date.now() + path.extname(file.originalname));
 
     } 
 
@@ -20,14 +20,14 @@ const upload = multer({storage: storage});
 
 /* GET home page. */
 router.get('/', registerController.principal);
-router.post("/create",
+router.post("/create", upload.any(),
 [
     check("nombre").isLength({min:3}),
     check("apellido").isLength({min:3}),
     check("contrasena").isLength({min:8}),
     check("email").isEmail(),
     check("usuario").isLength(),
-    check("imagen").isLocale()
+    //check("imagen").isLocale()
 ],
  registerController.store);
 
