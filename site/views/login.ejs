@@ -24,7 +24,16 @@
             <input type="checkbox" name="recordar" value="recordar">Recordarme<br>
             <p>
                 <a class = "ingresar" href="./register">No estoy registrado</a>
-            </p> 
+            </p>
+            <div style='color: red'>
+                <% if (typeof errors != 'undefined') { %>  
+                    <ul style='list-style: none'>
+                    <% for (error of errors) {%>
+                            <li> <%= error.msg%> </li>
+                    <% } %>
+                    </ul>
+                <% }%>
+                </div>
         </form>
         </section>
         </div>

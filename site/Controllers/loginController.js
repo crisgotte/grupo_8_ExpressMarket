@@ -48,7 +48,7 @@ const loginController = {
              
              res.render("index"); 
         } else {
-            return res.render("login", {erros: errors.errors});
+            return res.render("login", {errors: errors.errors});
         }
 
     },

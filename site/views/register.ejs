@@ -23,7 +23,7 @@
         </p>
         <p>
             <label for="email">Email:</label>
-            <input type="text" name="email" id="email">
+            <input type="text" name="email" id="email" required>
         </p>
         <p>
             <label for="password">Contraseña:</label>
@@ -38,6 +38,15 @@
             <input accept=".jpg,.png,.jpeg,.gif" class="" id="exampleFormControlFile1" name= "imagen" type="file" required>
         </p>
         <input type="submit" value="Registrar" id="botonDeRegistro">
+        <div style='color: red'>
+            <% if (typeof errors != 'undefined') { %>  
+                <ul style='list-style: none'>
+                <% for (error of errors) {%>
+                        <li> <%= error.msg%> </li>
+                <% } %>
+                </ul>
+            <% }%>
+            </div>
     </form>
     </section>
     </div>
