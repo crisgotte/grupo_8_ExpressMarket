@@ -26,13 +26,14 @@ const upload = multer({storage: storage});
 router.get('/', registerController.principal);
 router.post("/create", upload.any(),
 [
-    check("nombre").isLength({min:2}).withMessage("Su nombre debe tener 2 o màs caracteres"),
-    check("apellido").isLength({min:2}).withMessage("Su apellido debe tener 2 o màs caracteres"),
-    check("contrasena").isAlphanumeric().withMessage('La contraseña debe contener letras y numeros').isLength({min:8}).withMessage("Su contraseña debe tener màs de 8 caracteres"),
+    check("nombre").isLength({min:2}).withMessage("Su nombre debe tener 2 o más caracteres"),
+    check("apellido").isLength({min:2}).withMessage("Su apellido debe tener 2 o más caracteres"),
+    check("contrasena").isAlphanumeric().withMessage('La contraseña debe contener letras y números').isLength({min:8}).withMessage("Su contraseña debe tener màs de 8 caracteres"),
     //Validar password y repeatPassword
   body('repeatContrasena').custom((value, { req }) => {
+    console.log(value)
     if (value !== req.body.contrasena) {
-      throw new Error('La confirmacion de la contraseña no coincide');
+      throw new Error('Las contraseñas ingresadas no coinciden');
     }
     return true;
   }),

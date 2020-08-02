@@ -47,7 +47,7 @@
     height: 40px;
 } 
 
- .navbar li {
+.navbar li {
     display: inline;
     margin-left: 70px;
     margin-right: 60px;
@@ -55,14 +55,14 @@
 
 
 .inicio {
-padding-left: 20px;    
-padding-right: 20px;
-padding-top: 8px;
-padding-bottom: 8px;
-text-decoration: none;
-font-family: sans-serif;
-font-size: 15px;
-color: white;
+    padding-left: 20px;    
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 15px;
+    color: white;
 }
 
 /*---------Home --------*/
