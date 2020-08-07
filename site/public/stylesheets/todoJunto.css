@@ -734,14 +734,17 @@ s
   }
   */
   figure {
-    margin: 0;
+    margin: 0; 
     padding: 0;
   }
   
   img {
     width: 100%;
   }
-  
+  #imagenfruta{
+      width:5%;
+  }
+
   input {
     font-family: inherit;
   }
