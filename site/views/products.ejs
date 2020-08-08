@@ -12,7 +12,7 @@
 				%>
 			<div class="col-12 col-sm-6 col-lg-3">
 					<section class="product-box">
-						<a href="/product/detail/<%= product.id %>/visited">
+						<a href="/product/detail/<%= product.id %>/visited"></a>
 					<figure class="product-box_image">
 						<img src="/images/products/<%= product.imagen %>" alt="imagen de producto">
 					</figure>
@@ -21,14 +21,17 @@
 						<p><%= product.mensaje %></p>
 						<p class="estiloDelPrecio"><%= product.price %></p>
 						<i class="fas fa-truck"></i>
+						<button type="button" class="btn btn-warning" id = "buttonAgregar">Agregar al carrito</button>
 		 			</article>
-			</a>
+			
 	             </section>
 			</div>
 			<% } %>
 		</div>
 </div>
     <%-include('partials/footer.ejs') %>
+
+<script src="./agregaralcarrito.js"></script>
 
 </body>
 

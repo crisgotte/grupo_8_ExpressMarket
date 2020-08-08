@@ -670,6 +670,9 @@ s
     height: 0;
     transition: 300ms;
     overflow: hidden;
+    font-family: serif;
+    text-decoration-style: none;
+
   }
   
   .product-box_data i {
