@@ -1,5 +1,4 @@
 <%-include('partials/head.ejs') %>
-
 <body>
     <%-include('partials/header.ejs') %>
 	
@@ -7,6 +6,10 @@
 		<div class = "row">
 			<div class="col-12">
 				<h2 class="products-title">Productos de Almacén</h2>
+				<script>
+					document.querySelector("products-title").innerHTML += "hola";
+    
+			   </script>
 			</div>
 			<% for (product of products) { 
 				%>
@@ -31,8 +34,6 @@
 </div>
     <%-include('partials/footer.ejs') %>
 
-<script src="./agregaralcarrito.js"></script>
-
+	<script src = "../public/Frontjs/agregaralcarrito.js"></script>
 </body>
-
 </html>

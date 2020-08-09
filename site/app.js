@@ -15,6 +15,7 @@ var registerRouter = require("./routes/register");
 var productDetailRouter = require("./routes/productDetail");
 var productsRouter = require("./routes/products");
 var loginRouter = require("./routes/login");
+var ayudaycontactoRouter = require("./routes/ayudaycontacto");
 
 var app = express();
 
@@ -37,6 +38,7 @@ app.use("/register", registerRouter);
 app.use("/productDetail", productDetailRouter);
 app.use("/products", productsRouter);
 app.use("/login", loginRouter);
+app.use("/ayudaycontacto", ayudaycontactoRouter);
 
 
 

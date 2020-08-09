@@ -1,0 +1,36 @@
+<%- include("partials/head.ejs")%>
+
+	<body>	
+        <%-include('partials/header.ejs') %>
+        <div class="container" id= "contenedorRegistro-3"> 
+            <section id="sing-form-3">
+            <div class= varios>
+        </div>
+          
+        <form action="/login/login" method="POST">
+           
+            <p>
+                <label for="email">Email:</label>
+                <input type="text" name="Email" id="email">
+            </p>
+            <label for="value" class= "botoncatalogo-3">Asunto</label>
+                <select class="productos-3" name="categoria">                   
+                    <option value="almacen">PROBLEMAS CON ENVÍO</option>
+                    <option value="lacteos">FACTURACION</option>
+                    <option value="verduleria">PROBLEMAS CON LA COMPRA</option>
+                    <option value="Perfumeria">NO RECIBÍ LO QUE PEDÍ</option>
+                    <option value="Limpieza">RRHH</option>
+                    <option value="home">OTRO TIPO DE AYUDA</option>
+                       
+            <textarea name = "mensaje" class= "cuadro"></textarea>   
+            <input type="submit" value="ENVIAR" id="botonDeRegistro-3">
+            
+        </form>
+        </section>
+        </div>
+    </div>
+    
+
+        <%-include("partials/footer.ejs")%>
+</body>
+</html>

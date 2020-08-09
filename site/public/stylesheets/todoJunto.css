@@ -219,6 +219,7 @@ h2.titulo-home {
 .link{
     color: white;
     margin-top:20px;
+    
 }  
 .redessociales{
     width:20px;
@@ -259,14 +260,14 @@ h2.titulo-home {
  .detalles1{
      background-color: rgb(255, 247, 180);
  } 
-
+/*
  .filas{
      background-color: rgb(234, 252, 185);
     }
 .filas3{
     background-color: rgb(255, 254, 187);
 } 
-
+*/
  .productoseleccionado {
      width: 100px;
  } 
@@ -417,10 +418,10 @@ margin-top:5px;
      margin-left: 200px;
  } 
  .footer{
-    background-color: #8080802e;
+    background-color: white;
         margin-top:30px;
         border-top: 5px groove rgb(106, 124, 106);
-        width: 1500px;
+        width: 100vw;
 
 } 
 #ContProd{
@@ -458,8 +459,8 @@ margin-top:5px;
 } 
 .link{
     color: green;
+    }
 
-}
  
 /*----------Register----------*/
 #contenedorRegistro{
@@ -564,7 +565,7 @@ s
     width: 800px;
     display: flex;
     flex-wrap: wrap;
-    background-color: rgb(204, 204, 204);
+    background-color: #8080802e;
 }
 #sing-form-2{
     margin-top: 10px;
@@ -765,3 +766,47 @@ s
     font-family: inherit;
   }
   
+  #contenedorRegistro-3{
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255); 
+} 
+    
+
+    #sing-form-3{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: solid 3px rgb(10, 97, 10);
+        padding: 50px;
+        /*width: 100%;*/
+        border-radius: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 16px;
+        color:black;
+ } 
+ .botoncatalogo-3{
+    margin-left:0px;
+   
+} 
+
+.productos-3{
+    width: 255px;
+    height: 35px;
+    padding-left:10px;
+    margin-top:15px;
+    margin-bottom:30px;
+} 
+#botonDeRegistro-3 {
+    margin-top: 17px;
+    width: 90px;
+    background-color: rgb(250, 34, 34);
+    color: white;
+    margin-bottom: 11px;
+    margin-right: auto;
+    margin-left: auto;
+    
+} 
