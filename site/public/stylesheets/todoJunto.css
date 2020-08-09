@@ -15,8 +15,10 @@
  }
 #separado{
    margin-bottom: 20px;
-  background-image: url("../images/header/fondo_gondola.jpg");
+background-image: url("../images/header/doscompus.png");
 } 
+
+
 
 .logo{
         height: 100px;
@@ -25,7 +27,7 @@
         margin-top:10px;
         margin-left: 0px;
         margin-right: 120px;
-        background-color: rgb(218, 218, 218);
+        /*background-color: rgb(218, 218, 218);*/
       
 } 
 
@@ -41,10 +43,13 @@
 }
 
 #menu{
-    background-color: rgb(233, 127, 41);
+    /*background-color: rgb(233, 127, 41);*/
     padding-top: 1px;
     padding-bottom: 1px;
     height: 40px;
+    background-color: #8080802e;
+    color: rgb(233,127,41);
+    font-weight: bold;
 } 
 
 .navbar li {
@@ -62,7 +67,8 @@
     text-decoration: none;
     font-family: sans-serif;
     font-size: 15px;
-    color: white;
+    color: rgb(233,127,41);
+} ;
 }
 
 /*---------Home --------*/
@@ -80,8 +86,9 @@
     display: block;
 }
      
-#banner {
-    width: 100%;
+#banner-2 {
+    margin-right: 50px;
+    margin-left: 83px;
 }
 
 h2.titulo-home {
@@ -94,8 +101,8 @@ h2.titulo-home {
     margin: 40px 0 20px;
     min-height: 43px;
     display: block;
-    background-color: gainsboro;
-    padding-top: 15px;
+    background-color: #8080802e;
+    padding-top: 7px;
   
     
 }
@@ -120,6 +127,11 @@ h2.titulo-home {
 .titulo-home:hover{
     text-decoration: underline;
 }
+.titulo-buscador{
+    margin-left: 364px;
+    margin-top: 40px;
+    font-size: 25px;
+} 
 
 .box-texto {
     color: #3C763E;
@@ -145,11 +157,15 @@ h2.titulo-home {
     margin-right: auto;
 }    
 
+.container-recetas{
+    background-image: url("../images/header/abstract-orange-stylish-wave-banner-background-vector.jpg");
+    margin-top: 10px;
+
+} 
 .box-imagen-receta{
      display: flex;
      position: relative;
      left: 0px;
-     background-color: gainsboro;
      width: 100%;
 
 }
@@ -166,9 +182,7 @@ h2.titulo-home {
     overflow: hidden;   
     margin-left: 60px;  
     margin-right: 60px;
-    justify-content: space-around;
-   
-    
+    justify-content: space-around;   
 }
 
 .col-6 {
@@ -185,8 +199,9 @@ h2.titulo-home {
 .home-banners{
     display: flex;
     position: relative;
-    background-color: gainsboro;
+    background-image: url("../images/header/abstract-orange-dadovuelta.jpg");
     width: 100%;
+   
 }
 
 .box-banner{
@@ -321,9 +336,6 @@ margin-top:5px;
     margin-top:10px;
     margin-left: 40px;
 }
-.filas{
-    
-} 
 
 
  .volver{
@@ -405,9 +417,10 @@ margin-top:5px;
      margin-left: 200px;
  } 
  .footer{
-    background-color:rgb(253, 255, 255);
+    background-color: #8080802e;
         margin-top:30px;
         border-top: 5px groove rgb(106, 124, 106);
+        width: 1500px;
 
 } 
 #ContProd{
@@ -545,7 +558,6 @@ s
     display: flex;
     flex-wrap: wrap;
     background-color: rgb(204, 204, 204);
-
 }
 /*-------------------LOGIN--------------*/
 #contenedorRegistro-1{
@@ -595,7 +607,7 @@ s
 #products-wrapper {
     margin-top: 30px;
     margin-bottom: 30px;
-    background-color:rgb(203, 212, 201) ;
+    background-color:#8080802e;
   }
   
   .products-title {
@@ -741,9 +753,10 @@ s
     padding: 0;
   }
   
-  img {
+  /*img {
     width: 100%;
-  }
+  }*/
+  
   #imagenfruta{
       width:5%;
   }
