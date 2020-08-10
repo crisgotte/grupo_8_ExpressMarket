@@ -33,7 +33,18 @@
 		</div>
 </div>
     <%-include('partials/footer.ejs') %>
+<script>
+	window.addEventListener("load", function(){
+		let button = document.querySelectorAll(".product-box_data i");
+		let elimimar = document.getElementsByClassName(".product-box_data i");
+      for(let = i = 0; i < button.length; i++){ 
+		 	button[i].addEventListener("click", function(){
+			this.style.backgroundColor= "red";
+		})
+	}
 
+	})
+</script>
 	<script src = "../public/Frontjs/agregaralcarrito.js"></script>
 </body>
 </html>
