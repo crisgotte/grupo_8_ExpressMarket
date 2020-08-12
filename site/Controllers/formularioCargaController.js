@@ -1,6 +1,20 @@
 let fs= require("fs");
 let path= require("path");
-const productsFilePath = path.dirname(__dirname) + '/data/products.json';
+const db = require("../database/models");
+
+const formularioCargaController = {
+    crear: function (req, res) {
+        db.Product.findAll()
+            .then(function(products){
+                return res.render ("listadoProductos", {products:products});
+            })
+
+
+    }
+}
+
+module.exports = formularioCargaController
+/*const productsFilePath = path.dirname(__dirname) + '/data/products.json';
 let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 
@@ -36,4 +50,8 @@ res.redirect("/")
         
 };
 
-module.exports = formularioCargaController;
+module.exports = formularioCargaController;*/
+
+
+
+
