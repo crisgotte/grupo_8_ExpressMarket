@@ -1,5 +1,5 @@
 module.exports = function(sequelize, dataTypes){
-    let alias = "products";
+    let alias = "Producto";
 
     let cols = {
         id: {
@@ -18,7 +18,7 @@ module.exports = function(sequelize, dataTypes){
 
         categoria:{
             type: dataTypes.STRING
-
+ 
         }, 
         descripcion:{
             type: dataTypes.STRING
@@ -30,18 +30,18 @@ module.exports = function(sequelize, dataTypes){
         }, 
     } 
     let config = {
-        tableName: "Products",
-        timesTamps: false
+        tableName: "products",
+        timestamps: false
 
     }
-    let user = sequelize.define(alias,cols,config);
-    Product.associate = function(models) {
+    let Products = sequelize.define(alias,cols,config);
+    /*Product.associate = function(models) {
         
         Product.hasMany(models.users,{ //de uno a muchos
             as: "products",
             foreignkey: "id"
         } )
-    }
+    }*/
 
     return Products;
 } 

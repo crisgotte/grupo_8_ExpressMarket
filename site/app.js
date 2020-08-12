@@ -17,6 +17,8 @@ var productsRouter = require("./routes/products");
 var loginRouter = require("./routes/login");
 var ayudaycontactoRouter = require("./routes/ayudaycontacto");
 var promocionesRouter = require("./routes/promociones");
+var productosRouter = require('./routes/productos');
+
 var app = express();
 
 // view engine setup
@@ -40,6 +42,7 @@ app.use("/products", productsRouter);
 app.use("/login", loginRouter);
 app.use("/ayudaycontacto", ayudaycontactoRouter);
 app.use("/promociones", promocionesRouter);
+app.use('/productos', productosRouter);
 
 
 // catch 404 and forward to error handler
