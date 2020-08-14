@@ -21,7 +21,7 @@ const productosController = {
     editar: function (req,res){
         db.Producto.findByPk(req.params.id)
             .then(function(productos){
-                return res.render("editarProductos", {productos:productos});
+                res.render("editarProductos", {productos:productos});
 
             })
     

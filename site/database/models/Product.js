@@ -35,13 +35,7 @@ module.exports = function(sequelize, dataTypes){
 
     }
     let Products = sequelize.define(alias,cols,config);
-    /*Product.associate = function(models) {
-        
-        Product.hasMany(models.users,{ //de uno a muchos
-            as: "products",
-            foreignkey: "id"
-        } )
-    }*/
+    
 
     return Products;
 } 
