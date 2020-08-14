@@ -26,7 +26,7 @@
                         <td><%=productos[i].categoria%></td>
                         <td><%=productos[i].descripcion%></td>
                         <td><a href="/productos/editar/<%=productos[i].id%>"><button type="button" class="btn btn-info">E</button></a></td>
-                        <td><form action="/productos/borrar/<%=productos[i].id%>" method="POST"><button type="button" class="btn btn-danger">X</button></form></td>
+                        <td><form action="/productos/borrar/<%=productos[i].id%>" method="POST"><button type="submit" class="btn btn-danger">X</button></form></td>
                     </tr>
                 <% } %> 
             </tbody>
