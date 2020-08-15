@@ -18,7 +18,7 @@
     <div class= "container" id="contenedorDelFormulario">
         <div class = "row" id="nombresenformulario">
             <div class = "col-lg-6">        
-                 <form action="/productos/editar/<%=productos.id%>" method="POST" class="form-inline" enctype="multipart/form-data">
+                 <form action="/productos/editar/<%=productos.id%>" method="POST" class="form-inline">
                     <div class="form-group" class="filas">
                         <label for="">Nombre</label>
                         <input type="text" name="nombre" value="<%=productos.nombre%>" id="inputPassword6" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
@@ -54,7 +54,7 @@
         <div class = "row">
             <div class= "cuadrodeproducto" class = col-lg-6>
                      <label class="text">Descripción</label>
-                    <textarea name = "descripcion" value="<%=productos.descripcion%>" class= "cuadro"></textarea>
+                    <textarea name = "descripcion" class= "cuadro"><%=productos.descripcion%></textarea>
                         
                         <button type = "reset" class="reset">Borrar</button>
                
