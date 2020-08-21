@@ -1,6 +1,18 @@
+const fs = require('fs');
+const path = require('path');
+const db = require("../database/models");
+
+
 const promocionesController = {
-    principal: (req,res) => {
-        res.render('promociones');
+    promociones: (req,res) => {
+        db.Product.findAll({
+            include: ["categoria"]
+         })
+            .then(function(productos){
+               res.render("promociones", {productos:productos});
+
+            })
+
     }
 };
 

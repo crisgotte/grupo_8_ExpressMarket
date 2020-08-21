@@ -6,7 +6,7 @@ let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 const formularioCargaController = {
     principal: (req,res) => {
-        res.render('formularioDeCarga');
+        res.render('formularioDeCargalis');
     
 },
 

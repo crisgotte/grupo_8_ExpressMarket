@@ -1,41 +1,43 @@
 var express = require('express');
-//let fs= require("fs");
 var router = express.Router();
-var productosController = require("../Controllers/productosController");
 var multer = require('multer');
 const path = require("path");
 
+var productosController = require("../controllers/productosController");
+
 const storage = multer.diskStorage({
-    destination: function(req, file, cb) {
+    destination: (req, file, cb) =>{
         cb(null,"./public/images/products");
 
     },
-    filename: function(req, file, cb){
+    filename: (req, file, cb) => {
                cb(null, Date.now() + path.extname(file.originalname));
 
     } 
 
 });
 const upload = multer({ storage: storage})
-
 // Creación
+router.get("/crear/principal",productosController.principal);
+router.get("/crear", productosController.crear);
+router.post("/crear", upload.any(), productosController.guardado);
 
-//router.get("/crear", productosController.crear);
-// Falta metodo post
-
-
-
-// Lectura
+// Listado
 router.get("/", productosController.listado);
 
 
 // Edición
 router.get("/editar/:id", productosController.editar);
-router.post("/editar/:id",productosController.actualizar);
+router.post("/editar/:id",upload.any(), productosController.actualizar);
 
+//detalle
+router.get("/:id", productosController.detalle);
 
 // Eliminar
 router.post("/borrar/:id", productosController.borrar);
+
+//Buscar
+router.post('/buscar', productosController.buscar);
 
 
 

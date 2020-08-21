@@ -1,0 +1,89 @@
+<%- include('partials/head.ejs') %>
+<body>
+    <header>
+        <div class="container-fluid-1">
+            <div class="row">
+                <div class="col-lg-9">
+                    <img src="/images/Logo.png"
+                        alt="Express Market" class="logo4">
+                </div>
+            
+                <div class="volver" class=col-lg-3>
+                    <button class="btn btn-outline-success my-2 my-lg-4" type="submit" id="volviendo">volver</button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <div class= "container" id="contenedorDelFormulario">
+        <div class = "row" id="nombresenformulario">
+            <div class = "col-lg-6">        
+                 <form action="/productos/editar/<%=producto.id%>" method="POST" class="form-inline" enctype="multipart/form-data">
+                    <div class="form-group" class="filas">
+                        <label for="">Nombre</label>
+                        <input type="text" name="nombre" value="<%=producto.nombre%>" id="inputPassword6" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
+                    </div>
+                
+            </div>
+        
+            <div class = "col-lg-6">
+                <div class="form-group" class="filas">
+                   <label for="">Precio</label>
+                   <input type="Float" name="precio" value="<%=producto.precio%>" id="inputPassword6" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
+                </div>
+                
+         </div>
+        </div>
+    
+        <div class ="row" id="sectionCatalogo">
+            <div class= "col-lg-12">
+                <label for="">Categoria</label>
+                 <select name="categoria">
+                     <% for (let i = 0; i < categorias.length; i++) { %>
+                        <% if(categorias[i].id_categories == producto.categoria_id) { %>
+                        <option value="<%=categorias[i].id_categories%>" selected>
+                            <%=categorias[i].nombre%>
+                         </option>
+                            <% } else{ %>
+                        <option value="<%=categorias[i].id_categories%>">
+                            <%=categorias[i].nombre%>
+                         </option>
+                         <% } %>     
+                    <% } %>               
+                                   
+                 </select>
+             </div>
+        </div>
+        <div class = "row">
+            <div class= "cuadrodeproducto" class = col-lg-6>
+                     <label class="text">Descripción</label>
+                    <textarea name = "descripcion" class= "cuadro"><%=producto.descripcion%></textarea>                        
+                        <button type = "reset" class="reset">Borrar</button>
+               
+            </div>
+        </div>
+        <div class ="row">
+            <div class = col-12>                
+                    <div class="form-group" id="cargarimagen">      
+                        <label for="exampleFormControlFile1">Cargar Imagen</label>
+                        <input type="file" name="imagen" value="/images/products/<%=producto.imagen%>" class="form-control-file" id="exampleFormControlFile1">
+                        <div class="preview-pic tab-content">
+                            <div class="tab-pane active" id="pic-1"><img src="/images/products/<%=producto.imagen%>" /></div>
+                        </div>           
+                    
+                    </div>
+                  
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <button class= "boton" type ="submit" id="guardar">Guardar Cambios</button>
+            </div>
+        </div>
+        
+    </form>
+        </div>
+             
+        <%-include("partials/footer.ejs")%>
+</body>
+</html>

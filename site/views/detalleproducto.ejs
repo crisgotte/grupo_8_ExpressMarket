@@ -1,0 +1,37 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<!DOCTYPE html>
+<html lang="sp">
+    <%- include("partials/head.ejs")%>
+  <body>
+    <%-include('partials/header.ejs') %>
+  <div class="container">
+    <div class="card">
+      <div class="container-fliud">
+        <div class="wrapper row">
+          <div class="preview col-md-6">
+            <div class="preview-pic tab-content">
+              <div class="tab-pane active" id="pic-1"><img src="/images/products/<%=producto.imagen%>" /></div>
+            </div>
+          </div>
+          <div class="details col-md-6">
+            <h2 class="product-title"><%=producto.nombre%></h2>
+            <p class="product-description"><h4>Descripcion: <%=producto.descripcion%></h4></p>
+                        <h1 class="price"><span>$<%=producto.precio%></span></h1>
+                        <h4>Categoria: <%=producto.categoria.nombre%></h4>
+                        <h1></h1>
+                        <h1></h1>
+                        <a href="/productos/editar/<%=producto.id%>"><button type="button" class="btn btn-info">MODIFICAR</button></a>
+                        <h1></h1>
+                        <h1></h1>
+                        <form action="/productos/borrar/<%=producto.id%>" method="POST"><button type="submit" class="btn btn-danger">ELIMINAR</button></form>                                     
+                    </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <%-include("partials/footer.ejs")%>
+  </body>
+</html>

@@ -1,25 +1,32 @@
-<%- include('partials/head.ejs') %>
-<body>
-    <%- include("partials/header.ejs") %>
-    <div class = "container" id="contenderProductosDetalles">
-    <h1>Detalle del Producto</h1>
-    <div class="product_info">
-        <h3 class="description">
-            <div class="description_product">Arroz Lucchetti Largo Fino 1Kg</div>
-        </h3>
-        <h2>$60</h2>
-        <div class="name">
-            <img src="/images/arroz.jpg" alt="Arroz Lucchetti Largo Fino 1Kg" class="img_product">
-        </div>            
-        <div  class="comprar">
-            <button class="btn btn-outline-success my-2 my-lg-4" type="submit">Comprar</button>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<!DOCTYPE html>
+<html lang="sp">
+    <%- include("partials/head.ejs")%>
+  <body>
+    <%-include('partials/header.ejs') %>
+  <div class="container">
+    <div class="card">
+      <div class="container-fliud">
+        <div class="wrapper row">
+          <div class="preview col-md-6">
+            <div class="preview-pic tab-content">
+              <div class="tab-pane active" id="pic-1"><img src="/images/products/<%=producto.imagen%>" /></div>
+            </div>
+          </div>
+          <div class="details col-md-6">
+            <h2 class="product-title"><%=producto.nombre%></h2>
+            <p class="product-description"><h4><%=producto.descripcion%></h4></p>
+                        <h1 class="price"><span>$<%=producto.precio%></span></h1>
+                        <h4>Categoria: <%=producto.categoria.nombre%></h4>
+                        <button class="btn btn-success"><span style="margin-right:20px" class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> AGREGAR AL CARRITO</button>                                                           
+                    </div>
         </div>
+      </div>
     </div>
     </div>
-    
-   
-    <%-include('partials/footer.ejs') %>
-
-
-</body>
+    <%-include("partials/footer.ejs")%>
+  </body>
 </html>
